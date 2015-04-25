@@ -34,6 +34,28 @@ $desktop-width: 1024px;
 	{
 		display: none;
 	}
+
+	#nav_wrapper #nav_menu
+	{
+		.tab li 
+				{
+					// with of current / active tab
+				 	width: 100%;  
+				 	
+				} 	
+
+				.tab li:before, .tab li:after
+				{
+					display: none;
+				}
+
+				.active
+				{
+					text-decoration: underline 2px solid $napoliGreen;
+					border-bottom: 5px solid $napoliGreen;
+					background-color:white;
+				}
+	}
 }
 
 
@@ -185,7 +207,6 @@ $desktop-width: 1024px;
 				{
 					width: 0px;
   					height: 0px;
-					// border:none;
 					box-shadow:none;
 				}
 

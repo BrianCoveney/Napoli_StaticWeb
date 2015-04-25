@@ -17,7 +17,7 @@
 
 html{
 	// background-color: #ffffff;
-	@include background-image(linear-gradient(#ffffff, $footerDarkText));
+	//@include background-image(linear-gradient(#ffffff, $footerDarkText));
 
 }
 
@@ -26,7 +26,6 @@ html{
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-
 }
 
 /* ==========================================================================

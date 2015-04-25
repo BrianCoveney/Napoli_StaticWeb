@@ -1,0 +1,128 @@
+@import "../helpers/variables";
+
+// #nav_container
+// {
+// 	width:100%;
+// 	height:100px;
+// 	background-color: $lightColour;
+// 	margin-bottom:30px;
+
+// }
+
+
+#nav_wrapper
+{
+	@include display-flex;
+	height: 100px;
+	width:980px;
+	margin: 0 auto;
+	background: $lightColour;
+
+
+		#nav_menu
+		{	
+
+				ul
+				{
+					@include display-flex;
+					@include flex-wrap(wrap);
+					@include align-items(center);
+					@include flex-direction(row);
+					list-style-type: none;
+					justify-content:flex-start;
+					margin-top: 80px;
+				}
+
+				ul li a
+				{	
+					font-family: "ff-unit-rounded-web-1","ff-unit-rounded-web-2",sans-serif;
+					font-weight: bold;
+					// width: 100px;
+					font-size:20px;
+					margin-left: 60px;
+					text-decoration: none;
+					color: $darkColour;
+				}
+				.button-text:hover
+				{
+					color: #8CC63E;
+				}
+
+				.active
+				{
+					background-color:$napoliGreen;
+					padding: 10px 10px 0px 10px;
+					@include border-radius(10px 10px 0px 0px);
+				
+					span:hover
+					{
+						color: $darkColour;
+					}
+				}
+		}
+
+		#logo_container #logo_img
+			{
+				border:none;
+			}
+		
+
+		
+
+} //end #nav_wrapper
+
+.below_nav
+{
+	height:10px;
+	width:100%;
+	border-top: 15px solid $napoliGreen;
+	background-color:#9c1a1c;
+}
+
+
+//Curves on to active tabs
+.tab {
+  position: relative;
+}
+.tab:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.tab li:before,
+.tab li:after {
+  position: absolute;
+  bottom: 3.8px;
+  width: 6px;
+  height: 6px;
+  content: " ";
+}
+.tab li:before {
+  left: 54px;
+}
+.tab li:after {
+  margin-left: -1.5px;
+
+}
+
+.tab li:after, .tab li:before {
+  border: 1px solid $napoliGreen;
+}
+
+.tab li {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.tab li:before {
+  border-bottom-right-radius: 6px;
+  border-width: 0 1px 1px 0;
+  box-shadow: 2px 2px 0 $napoliGreen;
+}
+.tab li:after {
+  border-bottom-left-radius: 6px;
+  border-width: 0 0 1px 1px;
+  box-shadow: -2px 2px 0 $napoliGreen;
+}

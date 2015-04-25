@@ -1,0 +1,80 @@
+@import "../helpers/variables";
+
+footer{
+		width: 100%;
+		min-height: 240px;
+		height: auto;
+		background: #2f3033;
+		border-top: 46px solid $napoliGreen;
+		position:absolute;
+    	left:0;
+    	right:0;
+		// @include border-radius(0px 0px 7px 7px);
+		// border-radius: 0px 0px 7px 7px;
+
+
+	#footer_container{
+		display: flex;
+		max-width:980px;
+		margin: 0 auto;
+		
+	}
+		
+	#explore_container{
+			flex-basis: 45%;
+			order:1;
+			padding: 10px 20px;
+			font-size:13px;
+			line-height: 1.5em;
+			font-family: $generalText;
+			color: $footerDarkText;
+			
+			
+			a{
+				display: block;
+				text-decoration: none;
+				color: inherit;
+			}
+	}
+
+	#address_container{
+			flex-basis: 45%;
+			order:1;
+			padding-top: 10px;
+			margin: 0 auto; 
+			width: 200px;
+			
+			address{
+				font-size:13px;
+				font-family: $generalText;
+				font-style: normal;
+				line-height: 1.5em;
+				color: $footerDarkText;
+			}
+	}
+
+	.social_container{
+		flex-basis: 15%;
+		order:3;
+	}
+
+	.footer_titles{
+		width: 100px;
+		font-size:13px;
+		font-family: $generalText;
+		font-style: normal;
+		font-weight: bold;
+		padding-bottom: 5px;
+		color: #ffffff;
+	}
+
+	.cp_rights{
+			font-size:13px;
+			font-family: $generalText;
+			position: relative;
+			
+			text-align: center;
+			color: $footerDarkText;
+			border-top: 1px solid #AAAAAA;
+		}	
+}

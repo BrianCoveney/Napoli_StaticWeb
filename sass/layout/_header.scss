@@ -13,10 +13,10 @@
 #nav_wrapper
 {
 	@include display-flex;
-	height: 161px;
-	width:980px;
+	height: 200px;
+	width:100%;
 	margin: 0 auto;
-	background: $lightColour;
+	background: $napoliBlue;
 
 
 		#nav_menu
@@ -30,7 +30,7 @@
 					@include flex-direction(row);
 					list-style-type: none;
 					justify-content:flex-start;
-					margin-top: 80px;
+					margin-top: 177px;
 				}
 
 				ul li a
@@ -40,6 +40,7 @@
 					// width: 100px;
 					font-size:20px;
 					margin-left: 60px;
+					margin-top: 138px;
 					text-decoration: none;
 					color: $darkColour;
 				}
@@ -50,7 +51,7 @@
 
 				.active
 				{
-					background-color:$napoliGreen;
+					background-color:$lightColour;
 					padding: 10px 10px 0px 10px;
 					@include border-radius(10px 10px 0px 0px);
 				
@@ -70,59 +71,3 @@
 		
 
 } //end #nav_wrapper
-
-.below_nav
-{
-	height:10px;
-	width:100%;
-	border-top: 15px solid $napoliGreen;
-	background-color:#9c1a1c;
-}
-
-
-//Curves on to active tabs
-.tab {
-  position: relative;
-}
-.tab:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-
-.tab li:before,
-.tab li:after {
-  position: absolute;
-  bottom: 3.8px;
-  width: 6px;
-  height: 6px;
-  content: " ";
-}
-.tab li:before {
-  left: 54px;
-}
-.tab li:after {
-  margin-left: -1.5px;
-
-}
-
-.tab li:after, .tab li:before {
-  border: 1px solid $napoliGreen;
-}
-
-.tab li {
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-}
-.tab li:before {
-  border-bottom-right-radius: 6px;
-  border-width: 0 1px 1px 0;
-  box-shadow: 2px 2px 0 $napoliGreen;
-}
-.tab li:after {
-  border-bottom-left-radius: 6px;
-  border-width: 0 0 1px 1px;
-  box-shadow: -2px 2px 0 $napoliGreen;
-}

@@ -53,6 +53,7 @@
 	#nav_wrapper
 	{
 		height: 100px;
+		border-top: 15px solid #f80000;
 
 		img{
 			height: 100px;
@@ -113,16 +114,13 @@
 		padding: 0;
 	}
 
-
-
 	#nav_wrapper
 	{
 		width: auto;
 		height:auto;
 		display: none;
+		border-top: 0px;
 
-
-		
 		#nav_menu
 		{ 
 			margin:0;
@@ -168,52 +166,12 @@
 						color: #333;
 					}
 				}
-
-
 			}
-
-
-
-			.icon_svg
-			{	
-				display: none;
-			}
-
-
-
-			.tab li 
-			{
-					// with of current / active tab
-					width: 100%;  
-				} 	
-
-				.tab li:before, .tab li:after
-				{
-					width: 0px;
-					height: 0px;
-					box-shadow:none;
-				}
-
-				.active
-				{
-					background-color:transparent;
-					padding: 0;
-					margin:0;
-					border-radius:10px;
-				}
-
+			.icon_svg{	display: none; }
 			}	
 		}
 
-		.below_nav
-		{
-		// height:5px;
-		// width:100%;
-		// border-top: 0px;
-		// background-color:#9c1a1c;	
-		// margin-top: 5px;
-		display: none;
-	}
+
 
 	#main_wrapper
 	{

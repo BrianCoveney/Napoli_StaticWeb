@@ -30,9 +30,10 @@
 
 @include desktop
 {
-	.hamburger-menu
+	.hamburger-menu, #dropDown
 	{
 		display: none;
+		// visibility: hidden;
 	}
 
 }
@@ -50,10 +51,15 @@
 @include tablets
 {
 
+	#nav_container{
+		border-top: 15px solid #f80000;
+		height: 100px;
+	}
+
 	#nav_wrapper
 	{
 		height: 100px;
-		border-top: 15px solid #f80000;
+		
 
 		img{
 			height: 100px;
@@ -73,9 +79,10 @@
 		}
 	}
 
-	.hamburger-menu
+	.hamburger-menu, #dropDown
 	{
 		display: none;
+		// visibility: hidden;
 	}
 }
 
@@ -123,17 +130,22 @@
 
 		#nav_menu
 		{ 
-			margin:0;
-			padding: 0;
-			width:100%;
+			
+			.icon_svg{	display: none; }
+				
+		}
+	}	
 
+		#dropDown
+		{
+			display: none;
 			ul
 			{
 				display: block;
 				margin-top: 5px;
 				margin:0;
 				padding: 0;
-				z-index: 1;
+				
 
 				li
 				{
@@ -143,33 +155,28 @@
 					display: block;
 					border-top: 2px solid white;
 					border-radius:10px;
-
 				}
 
 				li a
 				{
 					font-size: 14px;
-					display: inline-block;
-					height: 100%;
-					width: 100%;
-					padding:0px;
-					margin: 0px;	
-					cursor: pointer; cursor: hand;
+				
+				span
+				{ 
+					left:150px; 
+					text-transform: uppercase;
+					font-family: $generalText;
 
-					.button-text
-					{ 
-						left:160px; 
-						text-transform: uppercase;
-					}
-					.button-text:hover
-					{
-						color: #333;
-					}
 				}
+				.button-text:hover
+				{
+					color: #333;
+				}
+
 			}
-			.icon_svg{	display: none; }
-			}	
 		}
+	}
+
 
 
 
@@ -183,7 +190,7 @@
 	footer
 	{
 		min-height: 100px;
-		border-top: 20px solid #8CC63E;
+		border-top: 20px solid $napoliBlue;
 	}
 
 	#footer_container

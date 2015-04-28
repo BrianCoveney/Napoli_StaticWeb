@@ -58,7 +58,7 @@ module.exports = function(grunt) {
       options: {              
         sassDir: 'sass',
         cssDir: 'stylesheets/build',
-        environment: 'production'
+        environment: 'development' //environment: 'production'
       }
     },
     dev: {                    

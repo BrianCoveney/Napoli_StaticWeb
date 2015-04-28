@@ -38,13 +38,6 @@ html{
 	@include display-flex;
 	@include flex-wrap(wrap);
 
-	.shopping_cart{
-		
-		// padding: 20px 0px 20px 0px;
-
-	}
-
-
 
 
 	p{
@@ -117,6 +110,7 @@ html{
 			font-family: $generalText;
 			border: 1px solid #AAAAAA;
 		}
+
 		
 		//Products ***/
 
@@ -125,21 +119,29 @@ html{
 			@include flex-wrap(wrap);
 			width:100%;
 			height:100%;
+
 			
 			.item_a{
 				flex-grow:1;
 				flex-basis:100%;
-				border: $borderLight;
+				margin-bottom: 21px;
 				height: 315px;
+				background-color:#eeeeee;
+				-webkit-box-shadow: 0 10px 6px -6px #777;
+			    -moz-box-shadow: 0 10px 6px -6px #777;
+			    box-shadow: 0 10px 6px -6px #777;
 			}
 
 			.item_b{
 				flex-grow:1;
 				flex-basis:100%;
-				border: $borderLight;
-				border-top:none;
-				border-bottom:none;
+				margin-bottom: 20px;
 				height: 315px;
+				background-color:#eeeeee;
+				-webkit-box-shadow: 0 10px 6px -6px #777;
+			    -moz-box-shadow: 0 10px 6px -6px #777;
+			    box-shadow: 0 10px 6px -6px #777;
+				
 			}
 
 			p{ 
@@ -160,8 +162,24 @@ html{
 				// word-wrap: break-word;
 			}
 
-			.shopping_button{
+			.shopping_button_1{
 				margin-top: 20px;
+				margin-left: 30px;
+			}
+
+			.shopping_button_2{
+				margin-top: 60px;
+				margin-left: 30px;
+			}
+
+			.shopping_cart{
+				padding-top: 20px;
+				padding-left: 850px;
+			}
+
+			form{
+				height: 50px;
+				width:300px;;
 			}
 
 			img{
@@ -307,6 +325,12 @@ html{
 @include tablets
 {
 
+	.shopping_cart
+	{
+		padding-left: 0px !important; // moving the button to the lhs
+		margin-bottom: 20px;
+	}
+
 		
 
 	#nav_container
@@ -338,9 +362,6 @@ html{
 			}
 		}
 	}
-
-
-
 
 	.hamburger-menu, #dropDown
 	{
@@ -435,7 +456,7 @@ html{
 					font-family: $generalText;
 
 				}
-				.button-text:hover
+				.text_dropDown:hover
 				{
 					color: #333;
 				}
@@ -498,10 +519,21 @@ html{
 			right:200px;
 		}
 
-		.shopping_button{  
+		.shopping_button_1, .shopping_button_2{  
 			position: relative;
 			top: 140px;
 		}
+		.shopping_button_2{  
+			position: relative;
+			top: 110px;
+		}
+		.shopping_cart
+		{
+			padding: 0px; // moving the button to the lhs
+			margin-bottom: 20px;
+		}
+
+
 	}
 
 	#main_wrapper #products_wrapper p{

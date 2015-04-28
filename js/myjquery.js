@@ -1,12 +1,22 @@
 
 $(document).ready(function() {
 
-		//Function for hide/show menu on small screens
+		//Click function to hide/show drop down menu on small screens
 	    $( ".hamburger-menu" ).click(function() 
-	    {
-	        $(".hamburger-menu:not('first-child')").next().slideToggle(1000)
-	    }
-    );
-
-
+		    {
+		        $(".hamburger-menu").next().slideToggle(1000);
+		    }
+	    );
+	    //Keep drop down meun visable on mouse over
+	    $( "#dropDown" ).mouseenter(function() 
+		    {
+		        $(".hamburger-menu").next().show();
+		    }
+	    );
+	    //Hide drop down on mouse leave
+	    $( "#dropDown" ).mouseleave(function() 
+		    {
+		        $(".hamburger-menu").next().hide(500);
+		    }
+	    );
 });

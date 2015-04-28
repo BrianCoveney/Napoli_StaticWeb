@@ -4,7 +4,7 @@
 	width:100%;
 	height:150px;
 	background-color: $napoliBlue;
-	border-top: 30px solid #72285D;
+	border-top: 30px solid #72285d;
 }
 
 #dropDown{
@@ -28,14 +28,11 @@
 {
 	@include display-flex;
 	height: 150px;
-	width:980px;
+	max-width:980px;
 	margin: 0 auto;
 	background: $napoliBlue;
 
-	.shopping_cart{
-		margin-left: 410px;
-		border:1px solid black;
-	}
+	
 	
 
 
@@ -66,7 +63,7 @@
 
 
 
-		.button-text:hover
+		.button-text:hover, .text_dropDown:hover
 		{
 			color: $lightColour;
 		}

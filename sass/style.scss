@@ -26,19 +26,26 @@ html{
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
+
 }
 
 /* ==========================================================================
    Main Content
    ==========================================================================*/
 
-#main_wrapper{
+#main_wrapper
+{
 	@include display-flex;
 	@include flex-wrap(wrap);
 
 	.shopping_cart{
-		margin:100px;
+		
+		// padding: 20px 0px 20px 0px;
+
 	}
+
+
+
 
 	p{
 		margin: 10px;
@@ -110,7 +117,58 @@ html{
 			font-family: $generalText;
 			border: 1px solid #AAAAAA;
 		}
-	}
+		
+		//Products ***/
+
+		#products_wrapper{
+			@include display-flex;
+			@include flex-wrap(wrap);
+			width:100%;
+			height:100%;
+			
+			.item_a{
+				flex-grow:1;
+				flex-basis:100%;
+				border: $borderLight;
+				height: 315px;
+			}
+
+			.item_b{
+				flex-grow:1;
+				flex-basis:100%;
+				border: $borderLight;
+				border-top:none;
+				border-bottom:none;
+				height: 315px;
+			}
+
+			p{ 
+				font-family: $generalText;
+				font-size: 20px;
+				
+			}
+
+			.item_title {
+				margin-top: -240px;
+				margin-left: 350px;
+				font-weight: bold;
+			}
+
+			.item_desc{
+				font-size: 16px;
+				margin-left: 350px;
+				// word-wrap: break-word;
+			}
+
+			.shopping_button{
+				margin-top: 20px;
+			}
+
+			img{
+				padding:30px;
+			}
+		}
+}
 
 
 
@@ -154,9 +212,6 @@ html{
     background-color:#111;
     border-radius:5px;
     cursor: pointer;
-    // position: absolute;
-    // left:0;
-    // top:0;
     position:relative;
     margin: 10px 0px 20px 10px;
 }
@@ -174,19 +229,13 @@ html{
 
 .hamburger-menu:after
 {
-    top:10px;
+    top:7px;
 }
 
 .hamburger-menu:before
 {
-    top:20px;
+    top:14px;
 }
-
-
-
-
-
-
 
 
 /* ==========================================================================
@@ -199,5 +248,270 @@ html{
     color: #000;
     padding: 0.2em 0;
 }
+
+
+
+/* ==========================================================================
+ Media Queries - taking them out of a seperate file 
+ ========================================================================== */
+
+   $phone-width: 320px;
+   $tablet-width: 768px;
+   $desktop-width: 1024px;
+
+   #main_wrapper{
+   	@media only screen and (max-width: $tablet-width){
+   		display: block;
+   	}
+   }
+
+   #main_img{
+   	@media screen and (max-width: $phone-width){
+		// display: none;
+	}
+}
+
+
+@mixin desktop{
+	@media (min-width: $desktop-width)
+	{
+		@content; 
+	}
+}
+
+@include desktop
+{
+	.hamburger-menu, #dropDown
+	{
+		display: none;
+		// visibility: hidden;
+	}
+
+	.shopping_button
+	{
+		padding-top: 20px;
+	}
+
+}
+
+
+@mixin tablets{
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) 
+	{
+		@content;
+	}
+
+}
+
+
+@include tablets
+{
+
+		
+
+	#nav_container
+	{
+		border-top: 15px solid #f80000;
+		height: 100px;
+	
+
+		#nav_wrapper
+		{
+			height: 100px;
+
+
+			img{
+				height: 100px;
+				width: 128px;
+			}
+
+
+			#nav_menu ul
+			{
+				margin-top: 76px;
+
+				li a
+				{
+					margin-left: 20px;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+
+
+
+	.hamburger-menu, #dropDown
+	{
+		display: none;
+		// visibility: hidden;
+	}
+}
+
+
+@mixin phone{
+	@media (max-width: $tablet-width) 
+	{
+		@content;
+	}
+}
+
+@include phone
+{
+
+	.cp_rights{ height:100%; width: 100%; }
+
+	// auto height prevents menu items jumping with slideToggle()
+	#nav_container{
+		height:auto;
+		width: auto;
+		margin-bottom: 5px;
+		display: none;
+	}  
+
+	#carousel{
+		// padding: 0;
+		// margin-top: 200px;
+		// display: none;
+	}
+
+	#logo_img
+	{			
+		display: none;
+	}
+
+	li .selected
+	{
+		// margin-right: 10px;
+		margin:0;
+		padding: 0;
+	}
+
+	#nav_wrapper
+	{
+		width: auto;
+		height:auto;
+		display: none;
+		border-top: 0px;
+
+		#nav_menu
+		{ 
+			
+			.icon_svg{	display: none; }
+
+		}
+	}	
+
+	#dropDown
+	{
+		display: none;
+		ul
+		{
+			display: block;
+			margin-top: 5px;
+			margin:0;
+			padding: 0;
+
+
+			li
+			{
+				background-color:$napoliBlue;
+				height:44px;
+				line-height: 50px;
+				display: block;
+				border-top: 2px solid white;
+				border-radius:10px;
+			}
+
+			li a
+			{
+				font-size: 14px;
+				
+				span
+				{ 
+					left:150px; 
+					text-transform: uppercase;
+					font-family: $generalText;
+
+				}
+				.button-text:hover
+				{
+					color: #333;
+				}
+
+			}
+		}
+	}
+
+
+
+
+	#main_wrapper
+	{
+		font-size: 14px;
+		display: block;
+		margin:0;
+		padding: 0;
+	}
+	footer
+	{
+		min-height: 100px;
+		border-top: 20px solid $napoliBlue;
+	}
+
+	#footer_container
+	{
+		p, a, #footer_address
+		{
+			font-size: 12px;
+			line-height: 1.5em;
+		}
+
+		#explore_container
+		{
+			width:50px;
+		}
+
+		#address_container
+		{
+			width:180px;
+			display: block;
+			bottom:115px;
+		}
+
+		ul.social_links li{display:none;}
+	}
+
+	//Products
+	#main_wrapper #products_wrapper
+	{
+
+		.item_desc{ display:none; }
+
+		p{ font-size:8px; }
+
+		.item_title
+		{  
+			position: relative;
+			top: 220px;
+			right:200px;
+		}
+
+		.shopping_button{  
+			position: relative;
+			top: 140px;
+		}
+	}
+
+	#main_wrapper #products_wrapper p{
+		font-size:14px;
+	}
+
+} // end @include phone
+
+
+
+
 
 

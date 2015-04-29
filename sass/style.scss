@@ -257,8 +257,8 @@ html{
 
 
 /* ==========================================================================
-   5.0 Browser Upgrade Prompt
-   ========================================================================== */
+Browser Upgrade Prompt
+========================================================================== */
 
 .browserupgrade {
     margin: 0.2em 0;
@@ -267,6 +267,56 @@ html{
     padding: 0.2em 0;
 }
 
+/* ==========================================================================
+Form on Contact Page
+========================================================================== */
+
+#form_container h2{
+	margin-left: 38px;
+}
+
+.input{
+	padding:10px;
+	margin: 20px 40px 20px 0px;
+}
+
+.yrName{ margin-left: 38px; }
+.yrSubject{ margin-right:0px; }
+
+.wrapper{
+	display: inline-block;
+}
+
+textarea{
+	width: 882px;
+	height: 200px;
+	padding:10px;
+	margin:0px 38px 0px 38px;
+}
+
+
+.submit_wrapper{ 
+	display: inline-block;
+}
+
+.form{
+	padding:10px;
+	margin-right: 40px;
+}
+
+.send{margin: 20px 80px 40px 38px; }
+
+.send, .reset{  
+	background-color:$napoliBlue;
+	color: white;
+	border: none;
+	width:100px;
+    cursor: pointer;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
 
 
 /* ==========================================================================

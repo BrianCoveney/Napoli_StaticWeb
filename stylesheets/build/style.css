@@ -181,7 +181,7 @@ footer {
   width: 100%;
   min-height: 240px;
   height: auto;
-  background: #2f3033;
+  background: #656565;
   border-top: 46px solid #77abff;
   position: absolute;
   left: 0;
@@ -258,7 +258,7 @@ footer .cp_rights {
   width: 100%;
   height: 150px;
   background-color: #77abff;
-  border-top: 30px solid #72285d;
+  border-top: 30px solid #656565;
 }
 
 /* line 12, ../../sass/layout/_header.scss */
@@ -717,8 +717,8 @@ ul.social_links li a {
 }
 
 /* ==========================================================================
-   5.0 Browser Upgrade Prompt
-   ========================================================================== */
+Browser Upgrade Prompt
+========================================================================== */
 /* line 263, ../../sass/style.scss */
 .browserupgrade {
   margin: 0.2em 0;
@@ -728,70 +728,136 @@ ul.social_links li a {
 }
 
 /* ==========================================================================
+Form on Contact Page
+========================================================================== */
+/* line 274, ../../sass/style.scss */
+#form_container h2 {
+  margin-left: 38px;
+}
+
+/* line 278, ../../sass/style.scss */
+.input {
+  padding: 10px;
+  margin: 20px 40px 20px 0px;
+}
+
+/* line 283, ../../sass/style.scss */
+.yrName {
+  margin-left: 38px;
+}
+
+/* line 284, ../../sass/style.scss */
+.yrSubject {
+  margin-right: 0px;
+}
+
+/* line 286, ../../sass/style.scss */
+.wrapper {
+  display: inline-block;
+}
+
+/* line 290, ../../sass/style.scss */
+textarea {
+  width: 882px;
+  height: 200px;
+  padding: 10px;
+  margin: 0px 38px 0px 38px;
+}
+
+/* line 298, ../../sass/style.scss */
+.submit_wrapper {
+  display: inline-block;
+}
+
+/* line 302, ../../sass/style.scss */
+.form {
+  padding: 10px;
+  margin-right: 40px;
+}
+
+/* line 307, ../../sass/style.scss */
+.send {
+  margin: 20px 80px 40px 38px;
+}
+
+/* line 309, ../../sass/style.scss */
+.send, .reset {
+  background-color: #77abff;
+  color: white;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+/* ==========================================================================
  Media Queries - taking them out of a seperate file 
  ========================================================================== */
 @media only screen and (max-width: 768px) {
-  /* line 280, ../../sass/style.scss */
+  /* line 330, ../../sass/style.scss */
   #main_wrapper {
     display: block;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 302, ../../sass/style.scss */
+  /* line 352, ../../sass/style.scss */
   .hamburger-menu, #dropDown {
     display: none;
   }
 
-  /* line 308, ../../sass/style.scss */
+  /* line 358, ../../sass/style.scss */
   .shopping_button {
     padding-top: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 328, ../../sass/style.scss */
+  /* line 378, ../../sass/style.scss */
   .shopping_cart {
     padding-left: 0px !important;
     margin-bottom: 20px;
   }
 
-  /* line 336, ../../sass/style.scss */
+  /* line 386, ../../sass/style.scss */
   #nav_container {
     border-top: 15px solid #f80000;
     height: 100px;
   }
-  /* line 342, ../../sass/style.scss */
+  /* line 392, ../../sass/style.scss */
   #nav_container #nav_wrapper {
     height: 100px;
   }
-  /* line 347, ../../sass/style.scss */
+  /* line 397, ../../sass/style.scss */
   #nav_container #nav_wrapper img {
     height: 100px;
     width: 128px;
   }
-  /* line 353, ../../sass/style.scss */
+  /* line 403, ../../sass/style.scss */
   #nav_container #nav_wrapper #nav_menu ul {
     margin-top: 76px;
   }
-  /* line 357, ../../sass/style.scss */
+  /* line 407, ../../sass/style.scss */
   #nav_container #nav_wrapper #nav_menu ul li a {
     margin-left: 20px;
     font-size: 18px;
   }
 
-  /* line 366, ../../sass/style.scss */
+  /* line 416, ../../sass/style.scss */
   .hamburger-menu, #dropDown {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  /* line 384, ../../sass/style.scss */
+  /* line 434, ../../sass/style.scss */
   .cp_rights {
     height: 100%;
     width: 100%;
   }
 
-  /* line 387, ../../sass/style.scss */
+  /* line 437, ../../sass/style.scss */
   #nav_container {
     height: auto;
     width: auto;
@@ -799,41 +865,41 @@ ul.social_links li a {
     display: none;
   }
 
-  /* line 400, ../../sass/style.scss */
+  /* line 450, ../../sass/style.scss */
   #logo_img {
     display: none;
   }
 
-  /* line 405, ../../sass/style.scss */
+  /* line 455, ../../sass/style.scss */
   li .selected {
     margin: 0;
     padding: 0;
   }
 
-  /* line 412, ../../sass/style.scss */
+  /* line 462, ../../sass/style.scss */
   #nav_wrapper {
     width: auto;
     height: auto;
     display: none;
     border-top: 0px;
   }
-  /* line 422, ../../sass/style.scss */
+  /* line 472, ../../sass/style.scss */
   #nav_wrapper #nav_menu .icon_svg {
     display: none;
   }
 
-  /* line 427, ../../sass/style.scss */
+  /* line 477, ../../sass/style.scss */
   #dropDown {
     display: none;
   }
-  /* line 430, ../../sass/style.scss */
+  /* line 480, ../../sass/style.scss */
   #dropDown ul {
     display: block;
     margin-top: 5px;
     margin: 0;
     padding: 0;
   }
-  /* line 438, ../../sass/style.scss */
+  /* line 488, ../../sass/style.scss */
   #dropDown ul li {
     background-color: #77abff;
     height: 44px;
@@ -842,22 +908,22 @@ ul.social_links li a {
     border-top: 2px solid white;
     border-radius: 10px;
   }
-  /* line 448, ../../sass/style.scss */
+  /* line 498, ../../sass/style.scss */
   #dropDown ul li a {
     font-size: 14px;
   }
-  /* line 452, ../../sass/style.scss */
+  /* line 502, ../../sass/style.scss */
   #dropDown ul li a span {
     left: 150px;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
   }
-  /* line 459, ../../sass/style.scss */
+  /* line 509, ../../sass/style.scss */
   #dropDown ul li a .text_dropDown:hover {
     color: #333;
   }
 
-  /* line 471, ../../sass/style.scss */
+  /* line 521, ../../sass/style.scss */
   #main_wrapper {
     font-size: 14px;
     display: block;
@@ -865,63 +931,63 @@ ul.social_links li a {
     padding: 0;
   }
 
-  /* line 478, ../../sass/style.scss */
+  /* line 528, ../../sass/style.scss */
   footer {
     min-height: 100px;
     border-top: 20px solid #77abff;
   }
 
-  /* line 486, ../../sass/style.scss */
+  /* line 536, ../../sass/style.scss */
   #footer_container p, #footer_container a, #footer_container #footer_address {
     font-size: 12px;
     line-height: 1.5em;
   }
-  /* line 492, ../../sass/style.scss */
+  /* line 542, ../../sass/style.scss */
   #footer_container #explore_container {
     width: 50px;
   }
-  /* line 497, ../../sass/style.scss */
+  /* line 547, ../../sass/style.scss */
   #footer_container #address_container {
     width: 180px;
     display: block;
     bottom: 115px;
   }
-  /* line 504, ../../sass/style.scss */
+  /* line 554, ../../sass/style.scss */
   #footer_container ul.social_links li {
     display: none;
   }
 
-  /* line 511, ../../sass/style.scss */
+  /* line 561, ../../sass/style.scss */
   #main_wrapper #products_wrapper .item_desc {
     display: none;
   }
-  /* line 513, ../../sass/style.scss */
+  /* line 563, ../../sass/style.scss */
   #main_wrapper #products_wrapper p {
     font-size: 8px;
   }
-  /* line 515, ../../sass/style.scss */
+  /* line 565, ../../sass/style.scss */
   #main_wrapper #products_wrapper .item_title {
     position: relative;
     top: 220px;
     right: 200px;
   }
-  /* line 522, ../../sass/style.scss */
+  /* line 572, ../../sass/style.scss */
   #main_wrapper #products_wrapper .shopping_button_1, #main_wrapper #products_wrapper .shopping_button_2 {
     position: relative;
     top: 140px;
   }
-  /* line 526, ../../sass/style.scss */
+  /* line 576, ../../sass/style.scss */
   #main_wrapper #products_wrapper .shopping_button_2 {
     position: relative;
     top: 110px;
   }
-  /* line 530, ../../sass/style.scss */
+  /* line 580, ../../sass/style.scss */
   #main_wrapper #products_wrapper .shopping_cart {
     padding: 0px;
     margin-bottom: 20px;
   }
 
-  /* line 539, ../../sass/style.scss */
+  /* line 589, ../../sass/style.scss */
   #main_wrapper #products_wrapper p {
     font-size: 14px;
   }

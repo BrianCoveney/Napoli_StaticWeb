@@ -33,7 +33,7 @@ html{
    Main Content
    ==========================================================================*/
 
-#main_wrapper
+#main_wrapper, #main_wrapper_contactPage
 {
 	@include display-flex;
 	@include flex-wrap(wrap);
@@ -255,6 +255,22 @@ html{
     top:14px;
 }
 
+//Google Map in Contact page
+#map-canvas {
+    width: 70%;
+    height: 400px;
+    margin-left: 38px;
+    margin-top: 50px;
+}
+
+#address_container_contactPage{
+	margin-left: 38px;
+}
+
+#address_container_contactPage{
+	margin-top: 70px;
+}
+
 
 /* ==========================================================================
 Browser Upgrade Prompt
@@ -273,6 +289,7 @@ Form on Contact Page
 
 #form_container h2{
 	margin-left: 38px;
+	margin-top: 50px;
 }
 
 .input{

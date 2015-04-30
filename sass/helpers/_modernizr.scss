@@ -34,9 +34,24 @@
 
 
 /* Modernizr */
-.no-flexbox .footer_titles, .no-flexbox #footer_address { position:relative; right:44px; }
 
 
+.no-flexbox #explore_container{
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 0px;
+
+}
+
+.no-flexbox #address_container{
+	float: right;
+	margin-top: 20px;
+}
+
+.no-flexbox .cp_rights{
+	display: none;
+}
 
 
 /* Modernizr */

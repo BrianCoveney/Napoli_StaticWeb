@@ -47,4 +47,4 @@ function initialize() {
 
 }
 /**** Google Map listener ****/
-google.maps.event.addDomListener(window, 'load', initialise);
+// google.maps.event.addDomListener(window, 'load', initialise);

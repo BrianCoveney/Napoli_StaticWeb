@@ -15,11 +15,7 @@
    ==========================================================================*/
 * { margin:0; padding:0; }
 
-html{
-	// background-color: #ffffff;
-	//@include background-image(linear-gradient(#ffffff, $footerDarkText));
 
-}
 
 #container{
 	max-width: 980px;
@@ -232,6 +228,9 @@ html{
     cursor: pointer;
     position:relative;
     margin: 10px 0px 20px 10px;
+    // float: right;
+    // position:relative;
+    // margin: 10px;
 }
 
 

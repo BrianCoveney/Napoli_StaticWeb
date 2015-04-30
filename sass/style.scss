@@ -277,10 +277,9 @@ Form on Contact Page
 
 .input{
 	padding:10px;
-	margin: 20px 40px 20px 0px;
+	margin: 20px 0px 20px 38px;
 }
 
-.yrName{ margin-left: 38px; }
 .yrSubject{ margin-right:0px; }
 
 .wrapper{
@@ -288,7 +287,7 @@ Form on Contact Page
 }
 
 textarea{
-	width: 882px;
+	width: 70%;
 	height: 200px;
 	padding:10px;
 	margin:0px 38px 0px 38px;
@@ -588,6 +587,18 @@ textarea{
 
 	#main_wrapper #products_wrapper p{
 		font-size:14px;
+	}
+
+	.reset{
+		margin-bottom: 20px;
+		margin-left: 38px;
+	}
+
+	.send{margin-right: 10px; }
+
+	.send, .reset{
+		width: 75px;
+		font-size: 12px;
 	}
 
 } // end @include phone

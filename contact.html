@@ -8,7 +8,45 @@
   <link href="stylesheets/build/style.css" rel="stylesheet" type="text/css" >
   <script src="js/build/global.min.js"></script>    
   <script src="js/myjquery.js" type="text/javascript"></script>
+  <style>
+    #map-canvas {
+      width: 70%;
+      height: 400px;
+      margin-left: 38px;
+    }
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+    function initialize() {
+      var myLatLng = new google.maps.LatLng(51.84701, -8.33440);
+      var myOptions ={
+        zoom: 15,
+        center: myLatLng,
+      }
+      var map = new google.maps.Map(document.getElementById('map-canvas'), myOptions);
 
+      var contentString = 
+      'Napoli Italian Delicatessen<br/>5 Castle Terrace,<br/>Monkstown, Cork, Ireland.<br/>tel: 021 4841002';
+
+      var infowindow = new google.maps.InfoWindow({
+       content: contentString,
+       maxWidth: 200
+     });
+
+  //Marker
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+
+}
+/**** Google Map listener ****/
+google.maps.event.addDomListener(window, 'load', initialise);
+</script>
 </head>
 <body>
         <!--[if lt IE 8]>
@@ -119,34 +157,39 @@
         </div>
       </section>       
       <div id="main_wrapper">
-      <section id="form_container">
-      <h2>Contact Form</h2>
-        <form class="form_wrapper" action="/post" method="post">
-          <div class="wrapper">
-            <input class="input yrName" type="name" name="name" placeholder="Your Name (Required)" autocomplete="on" required>
-          </div>
-          <div class="wrapper">
-            <input class="input yrEmail" type="email" name="email" placeholder="Your Email (Required)" autcomplete="on" required>
-          </div>
-          <div class="wrapper">
-            <input class="input yrPhone" typw="tel" name="phone" placeholder="Your Phone No. (Optional)" autocomplete="on">
-          </div>
-          <div class="wrapper">
-            <input class="input yrSubject" typw="text" name="subject" placeholder="Your Subject (Optiomal)" autocomplete="on">
-          </div>
-          <textarea class="textarea" placeholder="Write your message here..." ></textarea>
-          <div class="submit_wrapper">
+
+
+        <div id="map-canvas"></div>
+
+
+        <section id="form_container">
+          <h2>Contact Form</h2>
+          <form class="form_wrapper" action="/post" method="post">
+            <div class="wrapper">
+              <input class="input yrName" type="text" required name="name" placeholder="Your Name (Required)" autocomplete="on" >
+            </div>
+            <div class="wrapper">
+              <input class="input yrEmail" type="email" required name="email" placeholder="Your Email (Required)" autcomplete="on" required title="required">
+            </div>
+            <div class="wrapper">
+              <input class="input yrPhone" typw="tel" name="phone" placeholder="Your Phone No. (Optional)" autocomplete="on">
+            </div>
+            <div class="wrapper">
+              <input class="input yrSubject" typw="text" name="subject" placeholder="Your Subject (Optiomal)" autocomplete="on">
+            </div>
+            <textarea class="textarea" placeholder="Write your message here..." ></textarea>
+            <div class="submit_wrapper">
               <label>
                 <input class="form send" type="submit" value="SEND">
               </label>
             </div>
-          <div class="submit_wrapper">
+            <div class="submit_wrapper">
               <label>
                 <input class="form reset" type="reset" value="CLEAR">
               </label>
             </div>
-        </form>
-      </section>
+          </form>
+        </section>
       </div> <!-- id="main_wrapper" -->
     </div><!-- id="container" -->   
 
@@ -187,6 +230,12 @@
  <p class="cp_rights">Copyright ©2015, Napoli Deli</p>
 </div> 
 </footer>
+
+<script type="text/javascript">
+       window.onload = function() {
+           initialize();  
+        }
+      </script>
 
 </body>
 </html>

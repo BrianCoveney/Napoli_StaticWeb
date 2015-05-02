@@ -181,7 +181,11 @@ footer {
   width: 100%;
   min-height: 240px;
   height: auto;
+<<<<<<< HEAD
   background: #444444;
+=======
+  background: #656565;
+>>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
   border-top: 46px solid #77abff;
   position: absolute;
   left: 0;
@@ -452,31 +456,55 @@ ul.social_links li a {
 
 /* line 80, social/*.png */
 .social-sprite, .social-apple, .social-email, .social-facebook, .social-linkedin, .social-twitter, .facebook {
+<<<<<<< HEAD
   background-image: url('/images/social-se5176a880d.png');
   background-repeat: no-repeat;
 }
 
 /* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+=======
+  background-image: url('../../images/social-se5176a880d.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+>>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
 .social-apple {
   background-position: 0 0;
 }
 
+<<<<<<< HEAD
 /* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+=======
+/* line 84, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+>>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
 .social-email {
   background-position: 0 -32px;
 }
 
+<<<<<<< HEAD
 /* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+=======
+/* line 84, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+>>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
 .social-facebook {
   background-position: 0 -64px;
 }
 
+<<<<<<< HEAD
 /* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+=======
+/* line 84, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+>>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
 .social-linkedin {
   background-position: 0 -96px;
 }
 
+<<<<<<< HEAD
 /* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+=======
+/* line 84, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+>>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
 .social-twitter {
   background-position: 0 -128px;
 }
@@ -832,7 +860,11 @@ textarea {
 
 @media (min-width: 1024px) {
   /* line 367, ../../sass/style.scss */
+<<<<<<< HEAD
   .hamburger-menu, #dropDown, #logo_smScreen {
+=======
+  .hamburger-menu, #dropDown {
+>>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
     display: none;
   }
 
@@ -873,7 +905,11 @@ textarea {
   }
 
   /* line 431, ../../sass/style.scss */
+<<<<<<< HEAD
   .hamburger-menu, #dropDown, #logo_smScreen {
+=======
+  .hamburger-menu, #dropDown {
+>>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
     display: none;
   }
 }
@@ -1035,10 +1071,13 @@ textarea {
     width: 75px;
     font-size: 12px;
   }
+<<<<<<< HEAD
 
   /* line 620, ../../sass/style.scss */
   #logo_smScreen_wrapper {
     background-color: #77abff;
     width: 100%;
   }
+=======
+>>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
 }

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "Napoli",
+=======
+  "name": "Napoli_Static",
+>>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.5",

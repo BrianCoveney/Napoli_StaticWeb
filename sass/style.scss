@@ -364,11 +364,8 @@ textarea{
 
 @include desktop
 {
-<<<<<<< HEAD
 	.hamburger-menu, #dropDown,  #logo_smScreen
-=======
-	.hamburger-menu, #dropDown
->>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
+
 	{
 		display: none;
 		// visibility: hidden;
@@ -432,11 +429,8 @@ textarea{
 		}
 	}
 
-<<<<<<< HEAD
 	.hamburger-menu, #dropDown,  #logo_smScreen
-=======
-	.hamburger-menu, #dropDown
->>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
+
 	{
 		display: none;
 		// visibility: hidden;
@@ -625,14 +619,12 @@ textarea{
 		font-size: 12px;
 	}
 
-<<<<<<< HEAD
+
 	#logo_smScreen_wrapper{
 		background-color: $napoliBlue;
 		width:100%;
 	}
 
-=======
->>>>>>> 1253830c18c27c045cdd9ccc2b311350eab31d56
 } // end @include phone
 
 

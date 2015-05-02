@@ -1,0 +1,68 @@
+@import "helpers/variables";
+
+
+/* Modernizr */
+.no-flexbox li {
+	display: inline-block;
+	float: left;
+	position:relative;
+	top: -150px;
+	left: 100px;
+}
+.no-flexbox #nav_wrapper{ float: left; } 
+.no-flexbox #nav_menu{ text-align:center;}
+
+
+
+
+
+/* Modernizr */
+.no-flexbox .below_nav {display:none;}
+.no-flexbox #logo_img{text-decoration: none; border: 0px}
+
+
+
+
+/* Modernizr */
+.no-flexbox #main_wrapper { display: inline-block; }
+
+.no-flexbox #aside_left, .no-flexbox #main_content, .no-flexbox #aside_right{ 
+	float:left; width: 320px;
+} 
+
+
+
+
+/* Modernizr */
+
+
+.no-flexbox #explore_container{
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 0px;
+
+}
+
+.no-flexbox #address_container{
+	float: right;
+	margin-top: 20px;
+}
+
+.no-flexbox .cp_rights{
+	display: none;
+}
+
+
+/* Modernizr */
+.no-flexbox .social_links{ position: relative; top: 110px; left:800px;}
+.no-flexbox #explore_container a{ color:$footerDarkText; }
+
+
+
+
+
+
+
+
+

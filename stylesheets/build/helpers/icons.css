@@ -1,0 +1,82 @@
+/* line 4, ../../../sass/helpers/icons.scss */
+#my_favicon {
+  height: 16px;
+  width: 16px;
+}
+
+/* line 9, ../../../sass/helpers/icons.scss */
+.icon_svg {
+  width: 20px;
+  height: 20px;
+  padding-right: 0px;
+  fill: #333;
+}
+
+/*aligning nav text with icons*/
+/* line 20, ../../../sass/helpers/icons.scss */
+span.button-text {
+  position: relative;
+  top: -2px;
+}
+
+/*Social icons with Sass*/
+/* line 28, ../../../sass/helpers/icons.scss */
+ul.social_links li {
+  list-style-type: none;
+}
+/* line 29, ../../../sass/helpers/icons.scss */
+ul.social_links li a {
+  display: inline-block;
+  float: right;
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+  text-indent: -9999px;
+}
+
+/* line 80, social/*.png */
+.social-sprite, .social-apple, .social-email, .social-facebook, .social-linkedin, .social-twitter, .facebook {
+  background-image: url('../../../images/social-se5176a880d.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.social-apple {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.social-email {
+  background-position: 0 -32px;
+}
+
+/* line 84, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebook {
+  background-position: 0 -64px;
+}
+
+/* line 84, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.social-linkedin {
+  background-position: 0 -96px;
+}
+
+/* line 84, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.social-twitter {
+  background-position: 0 -128px;
+}
+
+/* line 46, ../../../sass/helpers/icons.scss */
+.facebook {
+  background-position: 0 -64px;
+}
+
+/* line 49, ../../../sass/helpers/icons.scss */
+.icon_svg:hover {
+  /*fill:#8CC63E !important;*/
+}
+
+/* line 52, ../../../sass/helpers/icons.scss */
+.fb_feed {
+  margin-right: 10px;
+  width: 400px;
+}

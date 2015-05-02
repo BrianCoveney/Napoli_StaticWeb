@@ -1,0 +1,55 @@
+@import "helpers/variables";
+
+
+#my_favicon{
+	height: 16px;
+	width: 16px;
+}
+
+.icon_svg{
+	width: 20px;
+	height: 20px;
+	padding-right:0px;
+	fill: $darkColour;
+}
+
+
+
+
+/*aligning nav text with icons*/
+span.button-text{
+	position: relative;
+   	top: -2px;
+}
+
+/*Social icons with Sass*/
+
+
+ul.social_links li{list-style-type:none;
+	a{
+		display:inline-block; 
+		float: right; width:32px; height:32px; 
+		margin-top: 10px;
+		text-indent:-9999px;
+	}
+}
+
+// $icons:(twitter, facebook);
+// @each $social in $icons{
+// 	.#{$social} { background:url('../images/social/#{$social}.png') no-repeat; }
+// }
+
+
+//Sprites icons with Compass
+@import "social/*.png";
+@include all-social-sprites; 					//in footer
+.facebook { @include social-sprite(facebook) };	//in nav bar
+
+
+.icon_svg:hover{/*fill:#8CC63E !important;*/}
+
+
+.fb_feed{
+	margin-right:10px;
+	width:400px;
+}

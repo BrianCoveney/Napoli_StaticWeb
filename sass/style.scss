@@ -1,0 +1,631 @@
+@import 'compass';
+@import "libs/owl.carousel";
+@import "libs/owl.theme";
+@import "layout/footer";
+@import "layout/header";
+@import "helpers/variables";
+@import "helpers/mediaQueries";
+@import "helpers/modernizr";
+@import "helpers/icons";
+
+
+
+/* ==========================================================================
+   Overall Container 
+   ==========================================================================*/
+* { margin:0; padding:0; }
+
+
+
+#container{
+	max-width: 980px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+
+}
+
+/* ==========================================================================
+   Main Content
+   ==========================================================================*/
+
+#main_wrapper, #main_wrapper_contactPage
+{
+	@include display-flex;
+	@include flex-wrap(wrap);
+
+
+
+	p{
+		margin: 10px;
+		padding: 10px;
+		letter-spacing: .1em;
+		line-height: 18px;
+		color: #7b7b7b;
+		font-size: 11px;
+	}
+
+	h3{ 
+		margin: 20px; 
+	}
+
+
+
+		#aside_left{
+			flex-grow:1;
+			flex-basis:33%;
+			@include order(1);
+			font-family: $generalText;
+			min-height: 280px;
+			border-right: $borderLight;
+			border-left: $borderLight;
+			
+
+			p{
+				padding: 10px;
+				letter-spacing: .1em;
+				line-height: 20px;
+			}
+
+		}
+
+		#main_content{
+			flex-grow:1;
+			flex-basis:33%;
+			@include order(2);
+			font-family: $generalText;
+			min-height: 400px;
+			border-right: $borderLight;
+		}
+
+
+		#aside_right{
+			flex-grow:1;
+			flex-basis:33%;
+			@include order(3);
+			font-family: $generalText;
+			min-height: 280px;
+			border-right: $borderLight;
+		}
+
+		#main_content__aboutPG{
+			flex-grow:1;
+			order: 2;
+			flex-basis:50%;
+			padding-right: 100px;
+		}
+		#aside_right__aboutPG{
+			flex-grow:1;
+			order: 1;
+			flex-basis:50%;
+		}
+
+		.aboutPG_desc{
+			width: 100%;
+			height: 400px;
+			font-family: $generalText;
+			border: 1px solid #AAAAAA;
+		}
+
+		
+		//Products ***/
+
+		#products_wrapper{
+			@include display-flex;
+			@include flex-wrap(wrap);
+			width:100%;
+			height:100%;
+
+			
+			.item_a{
+				flex-grow:1;
+				flex-basis:100%;
+				margin-bottom: 21px;
+				height: 315px;
+				background-color:#eeeeee;
+				-webkit-box-shadow: 0 10px 6px -6px #777;
+			    -moz-box-shadow: 0 10px 6px -6px #777;
+			    box-shadow: 0 10px 6px -6px #777;
+			}
+
+			.item_b{
+				flex-grow:1;
+				flex-basis:100%;
+				margin-bottom: 20px;
+				height: 315px;
+				background-color:#eeeeee;
+				-webkit-box-shadow: 0 10px 6px -6px #777;
+			    -moz-box-shadow: 0 10px 6px -6px #777;
+			    box-shadow: 0 10px 6px -6px #777;
+				
+			}
+
+			p{ 
+				font-family: $generalText;
+				font-size: 20px;
+				
+			}
+
+			.item_title {
+				margin-top: -240px;
+				margin-left: 350px;
+				font-weight: bold;
+			}
+
+			.item_desc{
+				font-size: 16px;
+				margin-left: 350px;
+				// word-wrap: break-word;
+			}
+
+			.shopping_button_1{
+				margin-top: 20px;
+				margin-left: 30px;
+			}
+
+			.shopping_button_2{
+				margin-top: 60px;
+				margin-left: 30px;
+			}
+
+			.shopping_cart{
+				padding-top: 20px;
+				padding-left: 850px;
+			}
+
+			form{
+				height: 50px;
+				width:300px;;
+			}
+
+			img{
+				padding:30px;
+			}
+		}
+}
+
+
+
+	#owl-demo {
+
+		.item{
+			padding:30px 3px;
+		}
+		.item img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.main_content_aboutPG{
+		width: 100%;
+		margin: 20px 0px 0px 0px;
+
+	}
+
+	.fb-page{
+		@include border-radius(20px);
+		margin-left: 20px;
+	}
+
+
+
+#main_img{
+	// @include border-radius(20px 20px 20px 20px); //Compass
+	width: 100%;
+	height: 100%;
+	padding-top:30px;
+}
+
+
+.hamburger-menu
+{
+    width:30px;
+    height:5px;
+    background-color:#111;
+    border-radius:5px;
+    cursor: pointer;
+    position:relative;
+    margin: 10px 0px 20px 10px;
+    // float: right;
+    // position:relative;
+    // margin: 10px;
+}
+
+
+.hamburger-menu:after, .hamburger-menu:before
+{
+    content: '';
+    width: 100%;
+    height:5px;
+    background-color:#111;
+    position:absolute;
+    border-radius:5px;
+}
+
+.hamburger-menu:after
+{
+    top:7px;
+}
+
+.hamburger-menu:before
+{
+    top:14px;
+}
+
+//Google Map in Contact page
+#map-canvas {
+    width: 70%;
+    height: 400px;
+    margin-left: 38px;
+    margin-top: 50px;
+}
+
+#address_container_contactPage{
+	margin-left: 38px;
+}
+
+#address_container_contactPage{
+	margin-top: 70px;
+}
+
+
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+Form on Contact Page
+========================================================================== */
+
+#form_container h2{
+	margin-left: 38px;
+	margin-top: 50px;
+}
+
+.input{
+	padding:10px;
+	margin: 20px 0px 20px 38px;
+}
+
+.yrSubject{ margin-right:0px; }
+
+.wrapper{
+	display: inline-block;
+}
+
+textarea{
+	width: 70%;
+	height: 200px;
+	padding:10px;
+	margin:0px 38px 0px 38px;
+}
+
+
+.submit_wrapper{ 
+	display: inline-block;
+}
+
+.form{
+	padding:10px;
+	margin-right: 40px;
+}
+
+.send{margin: 20px 80px 40px 38px; }
+
+.send, .reset{  
+	background-color:$napoliBlue;
+	color: white;
+	border: none;
+	width:100px;
+    cursor: pointer;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+
+/* ==========================================================================
+ Media Queries - taking them out of a seperate file 
+ ========================================================================== */
+
+   $phone-width: 320px;
+   $tablet-width: 768px;
+   $desktop-width: 1024px;
+
+   #main_wrapper{
+   	@media only screen and (max-width: $tablet-width){
+   		display: block;
+   	}
+   }
+
+   #main_img{
+   	@media screen and (max-width: $phone-width){
+		// display: none;
+	}
+}
+
+
+@mixin desktop{
+	@media (min-width: $desktop-width)
+	{
+		@content; 
+	}
+}
+
+@include desktop
+{
+	.hamburger-menu, #dropDown,  #logo_smScreen
+	{
+		display: none;
+		// visibility: hidden;
+	}
+
+	.shopping_button
+	{
+		padding-top: 20px;
+	}
+
+}
+
+
+@mixin tablets{
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) 
+	{
+		@content;
+	}
+
+}
+
+
+@include tablets
+{
+
+	.shopping_cart
+	{
+		padding-left: 0px !important; // moving the button to the lhs
+		margin-bottom: 20px;
+	}
+
+		
+
+	#nav_container
+	{
+		border-top: 15px solid #f80000;
+		height: 100px;
+	
+
+		#nav_wrapper
+		{
+			height: 100px;
+
+
+			img{
+				height: 100px;
+				width: 128px;
+			}
+
+
+			#nav_menu ul
+			{
+				margin-top: 76px;
+
+				li a
+				{
+					margin-left: 20px;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	.hamburger-menu, #dropDown,  #logo_smScreen
+	{
+		display: none;
+		// visibility: hidden;
+	}
+}
+
+
+@mixin phone{
+	@media (max-width: $tablet-width) 
+	{
+		@content;
+	}
+}
+
+@include phone
+{
+
+	.cp_rights{ height:100%; width: 100%; }
+
+	// auto height prevents menu items jumping with slideToggle()
+	#nav_container{
+		height:auto;
+		width: auto;
+		margin-bottom: 5px;
+		display: none;
+	}  
+
+	#carousel{
+		// padding: 0;
+		// margin-top: 200px;
+		// display: none;
+	}
+
+	#logo_img
+	{			
+		display: none;
+	}
+
+	li .selected
+	{
+		// margin-right: 10px;
+		margin:0;
+		padding: 0;
+	}
+
+	#nav_wrapper
+	{
+		width: auto;
+		height:auto;
+		display: none;
+		border-top: 0px;
+
+		#nav_menu
+		{ 
+			
+			.icon_svg{	display: none; }
+
+		}
+	}	
+
+	#dropDown
+	{
+		display: none;
+		ul
+		{
+			display: block;
+			margin-top: 5px;
+			margin:0;
+			padding: 0;
+
+
+			li
+			{
+				background-color:$napoliBlue;
+				height:44px;
+				line-height: 50px;
+				display: block;
+				border-top: 2px solid white;
+				border-radius:10px;
+			}
+
+			li a
+			{
+				font-size: 14px;
+				
+				span
+				{ 
+					left:150px; 
+					text-transform: uppercase;
+					font-family: $generalText;
+
+				}
+				.text_dropDown:hover
+				{
+					color: #333;
+				}
+
+			}
+		}
+	}
+
+
+
+
+	#main_wrapper
+	{
+		font-size: 14px;
+		display: block;
+		margin:0;
+		padding: 0;
+	}
+	footer
+	{
+		min-height: 100px;
+		border-top: 20px solid $napoliBlue;
+	}
+
+	#footer_container
+	{
+		p, a, #footer_address
+		{
+			font-size: 12px;
+			line-height: 1.5em;
+		}
+
+		#explore_container
+		{
+			width:50px;
+		}
+
+		#address_container
+		{
+			width:180px;
+			display: block;
+			bottom:115px;
+		}
+
+		ul.social_links li{display:none;}
+	}
+
+	//Products
+	#main_wrapper #products_wrapper
+	{
+
+		.item_desc{ display:none; }
+
+		p{ font-size:8px; }
+
+		.item_title
+		{  
+			position: relative;
+			top: 220px;
+			right:200px;
+		}
+
+		.shopping_button_1, .shopping_button_2{  
+			position: relative;
+			top: 140px;
+		}
+		.shopping_button_2{  
+			position: relative;
+			top: 110px;
+		}
+		.shopping_cart
+		{
+			padding: 0px; // moving the button to the lhs
+			margin-bottom: 20px;
+		}
+
+
+	}
+
+	#main_wrapper #products_wrapper p{
+		font-size:14px;
+	}
+
+	.reset{
+		margin-bottom: 20px;
+		margin-left: 38px;
+	}
+
+	.send{margin-right: 10px; }
+
+	.send, .reset{
+		width: 75px;
+		font-size: 12px;
+	}
+
+	#logo_smScreen_wrapper{
+		background-color: $napoliBlue;
+		width:100%;
+	}
+
+} // end @include phone
+
+
+
+
+
+

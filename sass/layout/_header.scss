@@ -1,0 +1,99 @@
+@import "../helpers/variables";
+
+#nav_container{
+	width:100%;
+	height:150px;
+	background-color: $napoliBlue;
+	border-top: 30px solid #656565;   // #b07534; //#72285d;
+}
+
+#dropDown{
+
+	ul li a
+	{	
+		font-family: "ff-unit-rounded-web-1","ff-unit-rounded-web-2",sans-serif;
+		font-weight: bold;
+		font-size:20px;
+		margin-right: 60px;
+		text-decoration: none;
+		color: $darkColour;
+
+		span .button-text{border-top:20px;}
+	}
+
+}
+
+
+#nav_wrapper
+{
+	@include display-flex;
+	height: 150px;
+	max-width:980px;
+	margin: 0 auto;
+	background: $napoliBlue;
+
+	
+	
+
+
+	#nav_menu
+	{	
+		ul
+		{
+			@include display-flex;
+			@include flex-wrap(wrap);
+			@include align-items(center);
+			@include flex-direction(row);
+			list-style-type: none;
+			justify-content:flex-start;
+			margin-top: 127px;
+		}
+
+		ul li a
+		{	
+			font-family: "ff-unit-rounded-web-1","ff-unit-rounded-web-2",sans-serif;
+			font-weight: bold;
+			font-size:20px;
+			margin-left: 40px;
+			text-decoration: none;
+			color: $darkColour;
+
+			span .button-text{border-top:20px;}
+		}
+
+
+
+		.button-text:hover, .text_dropDown:hover
+		{
+			color: $lightColour;
+		}
+
+		.active
+		{
+			background-color:$lightColour;
+			padding: 10px 10px 0px 10px;
+			@include border-radius(10px 10px 0px 0px);
+
+			span:hover
+			{
+				color: $darkColour;
+			}
+		}
+	}
+
+	#logo_container #logo_img
+	{
+		// border:none;
+	}
+
+	.head_contInfo{
+		font-style: italic;
+		font-family: $generalText;
+		font-weight:bold;
+		position: relative;
+		top: 20px;
+		right: 20px;
+	}
+
+
+} //end #nav_wrapper

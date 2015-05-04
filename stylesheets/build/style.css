@@ -698,38 +698,7 @@ ul.social_links li a {
   padding-top: 30px;
 }
 
-/* line 222, ../../sass/style.scss */
-.hamburger-menu {
-  width: 30px;
-  height: 5px;
-  background-color: #111;
-  border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-  margin: 10px 0px 20px 10px;
-}
-
-/* line 237, ../../sass/style.scss */
-.hamburger-menu:after, .hamburger-menu:before {
-  content: '';
-  width: 100%;
-  height: 5px;
-  background-color: #111;
-  position: absolute;
-  border-radius: 5px;
-}
-
-/* line 247, ../../sass/style.scss */
-.hamburger-menu:after {
-  top: 7px;
-}
-
-/* line 252, ../../sass/style.scss */
-.hamburger-menu:before {
-  top: 14px;
-}
-
-/* line 258, ../../sass/style.scss */
+/* line 224, ../../sass/style.scss */
 #map-canvas {
   width: 70%;
   height: 400px;
@@ -737,12 +706,12 @@ ul.social_links li a {
   margin-top: 50px;
 }
 
-/* line 265, ../../sass/style.scss */
+/* line 231, ../../sass/style.scss */
 #address_container_contactPage {
   margin-left: 38px;
 }
 
-/* line 269, ../../sass/style.scss */
+/* line 235, ../../sass/style.scss */
 #address_container_contactPage {
   margin-top: 70px;
 }
@@ -750,7 +719,7 @@ ul.social_links li a {
 /* ==========================================================================
 Browser Upgrade Prompt
 ========================================================================== */
-/* line 278, ../../sass/style.scss */
+/* line 244, ../../sass/style.scss */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -761,29 +730,29 @@ Browser Upgrade Prompt
 /* ==========================================================================
 Form on Contact Page
 ========================================================================== */
-/* line 289, ../../sass/style.scss */
+/* line 255, ../../sass/style.scss */
 #form_container h2 {
   margin-left: 38px;
   margin-top: 50px;
 }
 
-/* line 294, ../../sass/style.scss */
+/* line 260, ../../sass/style.scss */
 .input {
   padding: 10px;
   margin: 20px 0px 20px 38px;
 }
 
-/* line 299, ../../sass/style.scss */
+/* line 265, ../../sass/style.scss */
 .yrSubject {
   margin-right: 0px;
 }
 
-/* line 301, ../../sass/style.scss */
+/* line 267, ../../sass/style.scss */
 .wrapper {
   display: inline-block;
 }
 
-/* line 305, ../../sass/style.scss */
+/* line 271, ../../sass/style.scss */
 textarea {
   width: 70%;
   height: 200px;
@@ -791,23 +760,23 @@ textarea {
   margin: 0px 38px 0px 38px;
 }
 
-/* line 313, ../../sass/style.scss */
+/* line 279, ../../sass/style.scss */
 .submit_wrapper {
   display: inline-block;
 }
 
-/* line 317, ../../sass/style.scss */
+/* line 283, ../../sass/style.scss */
 .form {
   padding: 10px;
   margin-right: 40px;
 }
 
-/* line 322, ../../sass/style.scss */
+/* line 288, ../../sass/style.scss */
 .send {
   margin: 20px 80px 40px 38px;
 }
 
-/* line 324, ../../sass/style.scss */
+/* line 290, ../../sass/style.scss */
 .send, .reset {
   background-color: #77abff;
   color: white;
@@ -824,67 +793,68 @@ textarea {
  Media Queries - taking them out of a seperate file 
  ========================================================================== */
 @media only screen and (max-width: 768px) {
-  /* line 345, ../../sass/style.scss */
+  /* line 311, ../../sass/style.scss */
   #main_wrapper {
     display: block;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 367, ../../sass/style.scss */
-  .hamburger-menu, #dropDown, #logo_smScreen {
+  /* line 333, ../../sass/style.scss */
+  .hamburger-menu, #dropDown, #logo_smScreen, .above, .phNum {
     display: none;
   }
 
-  /* line 374, ../../sass/style.scss */
+  /* line 339, ../../sass/style.scss */
   .shopping_button {
     padding-top: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 394, ../../sass/style.scss */
+  /* line 359, ../../sass/style.scss */
   .shopping_cart {
     padding-left: 0px !important;
     margin-bottom: 20px;
   }
 
-  /* line 402, ../../sass/style.scss */
+  /* line 367, ../../sass/style.scss */
   #nav_container {
     border-top: 15px solid #f80000;
     height: 100px;
   }
-  /* line 408, ../../sass/style.scss */
+  /* line 373, ../../sass/style.scss */
   #nav_container #nav_wrapper {
     height: 100px;
   }
-  /* line 413, ../../sass/style.scss */
+  /* line 378, ../../sass/style.scss */
   #nav_container #nav_wrapper img {
     height: 100px;
     width: 128px;
   }
-  /* line 419, ../../sass/style.scss */
+  /* line 384, ../../sass/style.scss */
   #nav_container #nav_wrapper #nav_menu ul {
     margin-top: 76px;
   }
-  /* line 423, ../../sass/style.scss */
+  /* line 388, ../../sass/style.scss */
   #nav_container #nav_wrapper #nav_menu ul li a {
     margin-left: 20px;
     font-size: 18px;
   }
 
-  /* line 432, ../../sass/style.scss */
-  .hamburger-menu, #dropDown, #logo_smScreen {
+  /* line 397, ../../sass/style.scss */
+  .hamburger-menu, #dropDown, #logo_smScreen,
+  .above, .phNum {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  /* line 451, ../../sass/style.scss */
+  /* line 417, ../../sass/style.scss */
   .cp_rights {
     height: 100%;
     width: 100%;
   }
 
-  /* line 454, ../../sass/style.scss */
+  /* line 420, ../../sass/style.scss */
   #nav_container {
     height: auto;
     width: auto;
@@ -892,41 +862,41 @@ textarea {
     display: none;
   }
 
-  /* line 467, ../../sass/style.scss */
+  /* line 433, ../../sass/style.scss */
   #logo_img {
     display: none;
   }
 
-  /* line 472, ../../sass/style.scss */
+  /* line 438, ../../sass/style.scss */
   li .selected {
     margin: 0;
     padding: 0;
   }
 
-  /* line 479, ../../sass/style.scss */
+  /* line 445, ../../sass/style.scss */
   #nav_wrapper {
     width: auto;
     height: auto;
     display: none;
     border-top: 0px;
   }
-  /* line 489, ../../sass/style.scss */
+  /* line 455, ../../sass/style.scss */
   #nav_wrapper #nav_menu .icon_svg {
     display: none;
   }
 
-  /* line 494, ../../sass/style.scss */
+  /* line 460, ../../sass/style.scss */
   #dropDown {
     display: none;
   }
-  /* line 497, ../../sass/style.scss */
+  /* line 463, ../../sass/style.scss */
   #dropDown ul {
     display: block;
     margin-top: 5px;
     margin: 0;
     padding: 0;
   }
-  /* line 505, ../../sass/style.scss */
+  /* line 471, ../../sass/style.scss */
   #dropDown ul li {
     background-color: #77abff;
     height: 44px;
@@ -935,22 +905,22 @@ textarea {
     border-top: 2px solid white;
     border-radius: 10px;
   }
-  /* line 515, ../../sass/style.scss */
+  /* line 481, ../../sass/style.scss */
   #dropDown ul li a {
     font-size: 14px;
   }
-  /* line 519, ../../sass/style.scss */
+  /* line 485, ../../sass/style.scss */
   #dropDown ul li a span {
     left: 150px;
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
   }
-  /* line 526, ../../sass/style.scss */
+  /* line 492, ../../sass/style.scss */
   #dropDown ul li a .text_dropDown:hover {
     color: #333;
   }
 
-  /* line 538, ../../sass/style.scss */
+  /* line 504, ../../sass/style.scss */
   #main_wrapper {
     font-size: 14px;
     display: block;
@@ -958,87 +928,145 @@ textarea {
     padding: 0;
   }
 
-  /* line 545, ../../sass/style.scss */
+  /* line 511, ../../sass/style.scss */
   footer {
     min-height: 100px;
     border-top: 20px solid #77abff;
   }
 
-  /* line 553, ../../sass/style.scss */
+  /* line 519, ../../sass/style.scss */
   #footer_container p, #footer_container a, #footer_container #footer_address {
     font-size: 12px;
     line-height: 1.5em;
   }
-  /* line 559, ../../sass/style.scss */
+  /* line 525, ../../sass/style.scss */
   #footer_container #explore_container {
     width: 50px;
   }
-  /* line 564, ../../sass/style.scss */
+  /* line 530, ../../sass/style.scss */
   #footer_container #address_container {
     width: 180px;
     display: block;
     bottom: 115px;
   }
-  /* line 571, ../../sass/style.scss */
+  /* line 537, ../../sass/style.scss */
   #footer_container ul.social_links li {
     display: none;
   }
 
-  /* line 578, ../../sass/style.scss */
+  /* line 544, ../../sass/style.scss */
   #main_wrapper #products_wrapper .item_desc {
     display: none;
   }
-  /* line 580, ../../sass/style.scss */
+  /* line 546, ../../sass/style.scss */
   #main_wrapper #products_wrapper p {
     font-size: 8px;
   }
-  /* line 582, ../../sass/style.scss */
+  /* line 548, ../../sass/style.scss */
   #main_wrapper #products_wrapper .item_title {
     position: relative;
     top: 220px;
     right: 200px;
   }
-  /* line 589, ../../sass/style.scss */
+  /* line 555, ../../sass/style.scss */
   #main_wrapper #products_wrapper .shopping_button_1, #main_wrapper #products_wrapper .shopping_button_2 {
     position: relative;
     top: 140px;
   }
-  /* line 593, ../../sass/style.scss */
+  /* line 559, ../../sass/style.scss */
   #main_wrapper #products_wrapper .shopping_button_2 {
     position: relative;
     top: 110px;
   }
-  /* line 597, ../../sass/style.scss */
+  /* line 563, ../../sass/style.scss */
   #main_wrapper #products_wrapper .shopping_cart {
     padding: 0px;
     margin-bottom: 20px;
   }
 
-  /* line 606, ../../sass/style.scss */
+  /* line 572, ../../sass/style.scss */
   #main_wrapper #products_wrapper p {
     font-size: 14px;
   }
 
-  /* line 610, ../../sass/style.scss */
+  /* line 576, ../../sass/style.scss */
   .reset {
     margin-bottom: 20px;
     margin-left: 38px;
   }
 
-  /* line 615, ../../sass/style.scss */
+  /* line 581, ../../sass/style.scss */
   .send {
     margin-right: 10px;
   }
 
-  /* line 617, ../../sass/style.scss */
+  /* line 583, ../../sass/style.scss */
   .send, .reset {
     width: 75px;
     font-size: 12px;
   }
 
-  /* line 623, ../../sass/style.scss */
+  /* line 589, ../../sass/style.scss */
   #logo_smScreen_wrapper {
     background-color: #77abff;
     width: 100%;
+  }
+
+  /* line 595, ../../sass/style.scss */
+  .above, .phNum {
+    position: relative;
+    left: 150px;
+    top: -58px;
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* ==========================================================================
+  Small Screen Drop Down Menu
+  ========================================================================== */
+  /* line 607, ../../sass/style.scss */
+  .hamburger-menu {
+    width: 30px;
+    height: 5px;
+    background-color: #111;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 110px;
+  }
+  /* line 619, ../../sass/style.scss */
+  .hamburger-menu p.smScreen_menuTxt {
+    position: relative;
+    right: 40px;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* line 628, ../../sass/style.scss */
+  .link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 635, ../../sass/style.scss */
+  .hamburger-menu:after, .hamburger-menu:before {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #111;
+    position: absolute;
+    border-radius: 5px;
+  }
+
+  /* line 645, ../../sass/style.scss */
+  .hamburger-menu:after {
+    top: 7px;
+  }
+
+  /* line 650, ../../sass/style.scss */
+  .hamburger-menu:before {
+    top: 14px;
   }
 }

@@ -261,7 +261,11 @@ footer .cp_rights {
   border-top: 30px solid #656565;
 }
 
-/* line 12, ../../sass/layout/_header.scss */
+/* line 10, ../../sass/layout/_header.scss */
+#dropDown {
+  margin-top: 20px;
+}
+/* line 14, ../../sass/layout/_header.scss */
 #dropDown ul li a {
   font-family: "ff-unit-rounded-web-1","ff-unit-rounded-web-2",sans-serif;
   font-weight: bold;
@@ -270,12 +274,12 @@ footer .cp_rights {
   text-decoration: none;
   color: #333;
 }
-/* line 21, ../../sass/layout/_header.scss */
+/* line 23, ../../sass/layout/_header.scss */
 #dropDown ul li a span .button-text {
   border-top: 20px;
 }
 
-/* line 27, ../../sass/layout/_header.scss */
+/* line 29, ../../sass/layout/_header.scss */
 #nav_wrapper {
   display: -webkit-flex;
   display: flex;
@@ -284,7 +288,7 @@ footer .cp_rights {
   margin: 0 auto;
   background: #77abff;
 }
-/* line 41, ../../sass/layout/_header.scss */
+/* line 43, ../../sass/layout/_header.scss */
 #nav_wrapper #nav_menu ul {
   display: -webkit-flex;
   display: flex;
@@ -298,7 +302,7 @@ footer .cp_rights {
   justify-content: flex-start;
   margin-top: 127px;
 }
-/* line 52, ../../sass/layout/_header.scss */
+/* line 54, ../../sass/layout/_header.scss */
 #nav_wrapper #nav_menu ul li a {
   font-family: "ff-unit-rounded-web-1","ff-unit-rounded-web-2",sans-serif;
   font-weight: bold;
@@ -307,15 +311,15 @@ footer .cp_rights {
   text-decoration: none;
   color: #333;
 }
-/* line 61, ../../sass/layout/_header.scss */
+/* line 63, ../../sass/layout/_header.scss */
 #nav_wrapper #nav_menu ul li a span .button-text {
   border-top: 20px;
 }
-/* line 66, ../../sass/layout/_header.scss */
+/* line 68, ../../sass/layout/_header.scss */
 #nav_wrapper #nav_menu .button-text:hover, #nav_wrapper #nav_menu .text_dropDown:hover {
   color: #ffffff;
 }
-/* line 71, ../../sass/layout/_header.scss */
+/* line 73, ../../sass/layout/_header.scss */
 #nav_wrapper #nav_menu .active {
   background-color: #ffffff;
   padding: 10px 10px 0px 10px;
@@ -323,11 +327,11 @@ footer .cp_rights {
   -webkit-border-radius: 10px;
   border-radius: 10px 10px 0px 0px;
 }
-/* line 77, ../../sass/layout/_header.scss */
+/* line 79, ../../sass/layout/_header.scss */
 #nav_wrapper #nav_menu .active span:hover {
   color: #333;
 }
-/* line 89, ../../sass/layout/_header.scss */
+/* line 91, ../../sass/layout/_header.scss */
 #nav_wrapper .head_contInfo {
   font-style: italic;
   font-family: "Montserrat", sans-serif;
@@ -456,27 +460,27 @@ ul.social_links li a {
   background-repeat: no-repeat;
 }
 
-/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .social-apple {
   background-position: 0 0;
 }
 
-/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .social-email {
   background-position: 0 -32px;
 }
 
-/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .social-facebook {
   background-position: 0 -64px;
 }
 
-/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .social-linkedin {
   background-position: 0 -96px;
 }
 
-/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .social-twitter {
   background-position: 0 -128px;
 }
@@ -1032,8 +1036,8 @@ textarea {
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
-    right: 10px;
-    top: 110px;
+    left: 10px;
+    top: 120px;
   }
   /* line 619, ../../sass/style.scss */
   .hamburger-menu p.smScreen_menuTxt {

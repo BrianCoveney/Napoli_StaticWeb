@@ -1,13 +1,15 @@
 @import "../helpers/variables";
 
-#nav_container{
+#nav_container
+{
 	width:100%;
 	height:150px;
 	background-color: $napoliBlue;
 	border-top: 30px solid #656565;   // #b07534; //#72285d;
 }
 
-#dropDown{
+#dropDown
+{
 
 	margin-top:20px;
 
@@ -20,7 +22,10 @@
 		text-decoration: none;
 		color: $darkColour;
 
-		span .button-text{border-top:20px;}
+		span .button-text
+		{
+			border-top:20px;
+		}
 	}
 
 }
@@ -33,9 +38,6 @@
 	max-width:980px;
 	margin: 0 auto;
 	background: $napoliBlue;
-
-	
-	
 
 
 	#nav_menu
@@ -60,21 +62,28 @@
 			text-decoration: none;
 			color: $darkColour;
 
-			span .button-text{border-top:20px;}
+			span .button-text
+			{
+				border-top:20px;
+			}
 		}
 
 
 
-		.button-text:hover, .text_dropDown:hover
+		.button-text:hover
 		{
 			color: $lightColour;
+			-webkit-transition: color 0.2s ease-out;
+			-moz-transition: color 0.2s ease-out;
+			-o-transition: color 0.2s ease-out;
+			transition: color 0.2s ease-out;
 		}
 
 		.active
 		{
 			background-color:$lightColour;
-			padding: 10px 10px 0px 10px;
-			@include border-radius(10px 10px 0px 0px);
+			padding: 10px 1px 0px 1px;
+			@include border-radius(5px 20px 0px 0px);
 
 			span:hover
 			{
@@ -88,6 +97,7 @@
 		// border:none;
 	}
 
+	//Mobile screen size text
 	.head_contInfo{
 		font-style: italic;
 		font-family: $generalText;

@@ -9,7 +9,7 @@
 .icon_svg{
 	width: 20px;
 	height: 20px;
-	padding-right:0px;
+	padding:0px;
 	fill: $darkColour;
 }
 
@@ -19,7 +19,7 @@
 /*aligning nav text with icons*/
 span.button-text{
 	position: relative;
-   	top: -2px;
+   top: -2px;
 }
 
 /*Social icons with Sass*/

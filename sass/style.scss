@@ -132,9 +132,12 @@
 				background-color: $napoliBlue;
 				border: none;
 				@include border-radius(10px);
+				
+				// CSS Syntax box-shadow: none| h-shadow |v-shadow | blur spread | color;
 				-webkit-box-shadow: 0 10px 6px -6px #777;
-			    -moz-box-shadow: 0 10px 6px -6px #777;
-			    box-shadow: 0 10px 6px -6px #777;
+			 	-moz-box-shadow: 0 10px 6px -6px #777;
+				 box-shadow: 0 10px 6px -6px #777;
+
 
 				a
 				{

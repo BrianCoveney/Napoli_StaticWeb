@@ -10,7 +10,6 @@
 
 #dropDown
 {
-
 	margin-top:20px;
 
 	ul li a
@@ -51,32 +50,37 @@
 			list-style-type: none;
 			justify-content:flex-start;
 			margin-top: 127px;
-		}
+		
 
-		ul li a
+		li a
 		{	
 			font-family: "ff-unit-rounded-web-1","ff-unit-rounded-web-2",sans-serif;
 			font-weight: bold;
 			font-size:20px;
 			margin-left: 40px;
 			text-decoration: none;
-			color: $darkColour;
+			color: $darkColour; 
+		}
 
-			span .button-text
-			{
+		a:focus { 
+			outline: thin dotted $napoliBlue; // alter the outline border create by tabindex
+		}
+
+			span .button-text{
 				border-top:20px;
 			}
 		}
 
 
-
 		.button-text:hover
 		{
 			color: $lightColour;
-			-webkit-transition: color 0.2s ease-out;
-			-moz-transition: color 0.2s ease-out;
-			-o-transition: color 0.2s ease-out;
-			transition: color 0.2s ease-out;
+			@include transition-duration(0.2s);
+  			@include transition-timing-function(ease-out);
+			// -webkit-transition: color 0.2s ease-out;
+			// -moz-transition: color 0.2s ease-out;
+			// -o-transition: color 0.2s ease-out;
+			// transition: color 0.2s ease-out;
 		}
 
 		.active

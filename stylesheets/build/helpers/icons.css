@@ -36,7 +36,7 @@ ul.social_links li a {
 
 /* line 80, social/*.png */
 .social-sprite, .social-apple, .social-email, .social-facebook, .social-linkedin, .social-twitter, .facebook {
-  background-image: url('/images/social-se5176a880d.png');
+  background-image: url('../../../images/social-se5176a880d.png');
   background-repeat: no-repeat;
 }
 

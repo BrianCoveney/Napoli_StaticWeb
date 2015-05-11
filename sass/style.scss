@@ -546,7 +546,7 @@ textarea{
 	}  
 
 	#carousel{
-		margin-top: 10px;
+		margin-top: 20px;
 	}
 
 	#logo_img
@@ -727,11 +727,15 @@ Small Screen Drop Down Menu
 
 .hamburger-menu
 {
-    
+    width:30px;
+    height:5px;
+    background-color:#111;
+    border-radius:5px;
     cursor: pointer;
     position:absolute;
     left:10px;
     top:120px;
+    // margin: 10px 0px 20px 10px;
 
     p.smScreen_menuTxt{
     	position: relative;
@@ -739,6 +743,8 @@ Small Screen Drop Down Menu
 		font-size: 12px;
 		font-family: $generalText;
     }
+
+    span{margin-left: 35px;}
 }
 
 //increase clickable area of drop down links
@@ -749,7 +755,25 @@ Small Screen Drop Down Menu
  }
 
 
+.hamburger-menu:after, .hamburger-menu:before
+{
+    content: '';
+    width: 100%;
+    height:5px;
+    background-color:#111;
+    position:absolute;
+    border-radius:5px;
+}
 
+.hamburger-menu:after
+{
+    top:7px;
+}
+
+.hamburger-menu:before
+{
+    top:14px;
+}
 
 
 

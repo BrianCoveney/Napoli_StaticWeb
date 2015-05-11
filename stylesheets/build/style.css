@@ -195,7 +195,7 @@ footer #footer_container {
 }
 /* line 25, ../../sass/layout/_footer.scss */
 footer #explore_container {
-  flex-basis: 45%;
+  flex-basis: 25%;
   order: 1;
   padding: 10px 20px;
   font-size: 13px;
@@ -203,21 +203,21 @@ footer #explore_container {
   font-family: "Montserrat", sans-serif;
   color: #AAAAAA;
 }
-/* line 35, ../../sass/layout/_footer.scss */
+/* line 34, ../../sass/layout/_footer.scss */
 footer #explore_container a {
   display: block;
   text-decoration: none;
   color: inherit;
 }
-/* line 42, ../../sass/layout/_footer.scss */
+/* line 41, ../../sass/layout/_footer.scss */
 footer #address_container {
-  flex-basis: 45%;
+  flex-basis: 65%;
   order: 1;
   padding-top: 10px;
   margin: 0 auto;
-  width: 200px;
+  width: 250px;
 }
-/* line 49, ../../sass/layout/_footer.scss */
+/* line 48, ../../sass/layout/_footer.scss */
 footer #address_container address, footer #address_container #footer_hours {
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
@@ -225,12 +225,12 @@ footer #address_container address, footer #address_container #footer_hours {
   line-height: 1.5em;
   color: #AAAAAA;
 }
-/* line 58, ../../sass/layout/_footer.scss */
+/* line 57, ../../sass/layout/_footer.scss */
 footer .social_container {
   flex-basis: 15%;
   order: 3;
 }
-/* line 63, ../../sass/layout/_footer.scss */
+/* line 62, ../../sass/layout/_footer.scss */
 footer .footer_titles {
   width: 100px;
   font-size: 13px;
@@ -240,7 +240,7 @@ footer .footer_titles {
   padding-bottom: 5px;
   color: #ffffff;
 }
-/* line 73, ../../sass/layout/_footer.scss */
+/* line 72, ../../sass/layout/_footer.scss */
 footer .cp_rights {
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
@@ -1156,26 +1156,26 @@ textarea {
     left: 10px;
     top: 120px;
   }
-  /* line 740, ../../sass/style.scss */
+  /* line 739, ../../sass/style.scss */
   .hamburger-menu p.smScreen_menuTxt {
     position: relative;
     right: 40px;
     font-size: 12px;
     font-family: "Montserrat", sans-serif;
   }
-  /* line 747, ../../sass/style.scss */
+  /* line 746, ../../sass/style.scss */
   .hamburger-menu span {
     margin-left: 35px;
   }
 
-  /* line 751, ../../sass/style.scss */
+  /* line 750, ../../sass/style.scss */
   .link {
     display: inline-block;
     width: 100%;
     height: 100%;
   }
 
-  /* line 758, ../../sass/style.scss */
+  /* line 757, ../../sass/style.scss */
   .hamburger-menu:after, .hamburger-menu:before {
     content: '';
     width: 100%;
@@ -1185,12 +1185,12 @@ textarea {
     border-radius: 5px;
   }
 
-  /* line 768, ../../sass/style.scss */
+  /* line 767, ../../sass/style.scss */
   .hamburger-menu:after {
     top: 7px;
   }
 
-  /* line 773, ../../sass/style.scss */
+  /* line 772, ../../sass/style.scss */
   .hamburger-menu:before {
     top: 14px;
   }

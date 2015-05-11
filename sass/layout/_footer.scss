@@ -23,14 +23,13 @@ footer{
 	}
 		
 	#explore_container{
-			flex-basis: 45%;
+			flex-basis: 25%;
 			order:1;
 			padding: 10px 20px;
 			font-size:13px;
 			line-height: 1.5em;
 			font-family: $generalText;
 			color: $footerDarkText;
-			
 			
 			a{
 				display: block;
@@ -40,11 +39,11 @@ footer{
 	}
 
 	#address_container{
-			flex-basis: 45%;
+			flex-basis: 65%;
 			order:1;
 			padding-top: 10px;
 			margin: 0 auto; 
-			width: 200px;
+			width: 250px;
 			
 			address, #footer_hours{
 				font-size:13px;

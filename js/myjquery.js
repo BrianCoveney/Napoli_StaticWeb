@@ -4,7 +4,7 @@ $(document).ready(function() {
 		//Click function to hide/show drop down menu on small screens
 	    $( ".hamburger-menu" ).click(function() 
 		    {
-		        $(".hamburger-menu").next().slideToggle(1000);
+		        $(".hamburger-menu").next().slideToggle(500);
 		    }
 	    );
 	    //Keep drop down meun visable on mouse over

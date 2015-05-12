@@ -38,6 +38,7 @@
 	@include flex-wrap(wrap);
 
 
+	#products_wrapper{ margin-top: 20px; }
 
 	p{
 		margin: 10px;
@@ -75,8 +76,6 @@
 		margin: 20px;
 
 	}
-
-
 
 		#aside_left
 		{
@@ -387,11 +386,12 @@ textarea{
  ========================================================================== */
 
    $phone-width: 320px;
-   $tablet-width: 768px;
+   $tablet-width: 601px;
+   $table-large:768px;
    $desktop-width: 1024px;
 
    #main_wrapper{
-   	@media only screen and (max-width: $tablet-width){
+   	@media only screen and (max-width: $table-large){
    		display: block;
    	}
    }
@@ -427,7 +427,7 @@ textarea{
 
 
 @mixin tablets{
-	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) 
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) 
 	{
 		@content;
 	}
@@ -470,15 +470,19 @@ textarea{
 				width: 128px;
 			}
 
+			.icon_svg{
+				width: 15px;
+				height: 15px;
+			}
 
 			#nav_menu ul
 			{
-				margin-top: 76px;
+				margin-top: 85px;
 
 				li a
 				{
 					margin-left: 20px;
-					font-size: 18px;
+					font-size: 15px;
 				}
 			}
 		}

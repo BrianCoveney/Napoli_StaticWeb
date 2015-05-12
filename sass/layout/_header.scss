@@ -62,11 +62,8 @@
 			color: $darkColour; 
 		}
 
-		a:focus { 
-			outline: thin dotted $napoliBlue; // alter the outline border create by tabindex
-		}
-
-			span .button-text{
+			span .button-text
+			{
 				border-top:20px;
 			}
 		}

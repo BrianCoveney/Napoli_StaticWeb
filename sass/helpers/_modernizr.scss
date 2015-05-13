@@ -55,8 +55,20 @@
 
 
 /* Modernizr */
-.no-flexbox .social_links{ position: relative; top: 110px; left:800px;}
+.no-flexbox .social_links{ position: relative; top: 110px; left:600px;}
 .no-flexbox #explore_container a{ color:$footerDarkText; }
+
+
+.no-flexbox .hamburger-menu, .no-flexbox #dropDown,  .no-flexbox #logo_smScreen, .no-flexbox .above, .no-flexbox .phNum
+
+	{
+		display: none;
+	}
+
+	.no-flexbox .shopping_button
+	{
+		padding-top: 20px;
+	}
 
 
 

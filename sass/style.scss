@@ -405,12 +405,6 @@ textarea{
    	}
    }
 
-   #main_img{
-   	@media screen and (max-width: $phone-width){
-		// display: none;
-	}
-}
-
 
 @mixin desktop{
 	@media (min-width: $desktop-width)
@@ -508,16 +502,7 @@ textarea{
 		}
 
 	}
-
-		
-
 	
-
-			
-
-
-
-			
 
 	.hamburger-menu, #dropDown,  #logo_smScreen,
 		.above, .phNum, .rightImg
@@ -834,9 +819,18 @@ Small Screen Drop Down Menu
 	display: none;
 }
 	
-
-
 } // end @include phone
+
+
+#main_img{
+   	@media only screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}){
+   		width: 604px;
+   		height: 384px;
+   		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+   }
+}
 
 
 

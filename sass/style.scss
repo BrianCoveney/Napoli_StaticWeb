@@ -19,7 +19,6 @@
 }
 
 
-
 #container{
 	max-width: 980px;
 	width: 100%;
@@ -276,11 +275,20 @@
 
 
 #main_img{
-	// @include border-radius(20px 20px 20px 20px); //Compass
 	width: 100%;
 	height: 100%;
 	padding-top:30px;
 	margin-bottom:20px;
+
+	.menuPage_img
+	{
+		margin-left: 60px;
+		margin-right: 60px;  
+	}
+
+	.rightImg{ 
+			float: right;
+		}
 }
 
 
@@ -470,6 +478,7 @@ textarea{
 				width: 128px;
 			}
 
+
 			.icon_svg{
 				width: 15px;
 				height: 15px;
@@ -489,7 +498,7 @@ textarea{
 	}
 
 	.hamburger-menu, #dropDown,  #logo_smScreen,
-		.above, .phNum
+		.above, .phNum, .rightImg
 
 	{
 		display: none;
@@ -631,6 +640,7 @@ textarea{
 		margin:0;
 		padding: 0;
 	}
+
 	footer
 	{
 		min-height: 100px;
@@ -778,6 +788,11 @@ Small Screen Drop Down Menu
     top:14px;
 }
 
+.rightImg
+{
+	display: none;
+}
+	
 
 
 } // end @include phone

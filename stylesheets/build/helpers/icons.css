@@ -13,18 +13,18 @@
 }
 
 /*aligning nav text with icons*/
-/* line 20, ../../../sass/helpers/icons.scss */
+/* line 18, ../../../sass/helpers/icons.scss */
 span.button-text {
   position: relative;
   top: -2px;
 }
 
 /*Social icons with Sass*/
-/* line 28, ../../../sass/helpers/icons.scss */
+/* line 25, ../../../sass/helpers/icons.scss */
 ul.social_links li {
   list-style-type: none;
 }
-/* line 29, ../../../sass/helpers/icons.scss */
+/* line 26, ../../../sass/helpers/icons.scss */
 ul.social_links li a {
   display: inline-block;
   float: right;
@@ -35,7 +35,7 @@ ul.social_links li a {
 }
 
 /* line 80, social/*.png */
-.social-sprite, .social-apple, .social-email, .social-facebook, .social-linkedin, .social-twitter, .facebook {
+.social-sprite, .social-apple, .social-email, .social-facebook, .social-linkedin, .social-twitter {
   background-image: url('../../../images/social-se5176a880d.png');
   background-repeat: no-repeat;
 }
@@ -65,18 +65,7 @@ ul.social_links li a {
   background-position: 0 -128px;
 }
 
-/* line 46, ../../../sass/helpers/icons.scss */
-.facebook {
-  background-position: 0 -64px;
-}
-
-/* line 49, ../../../sass/helpers/icons.scss */
+/* line 43, ../../../sass/helpers/icons.scss */
 .icon_svg:hover {
   /*fill:#8CC63E !important;*/
-}
-
-/* line 52, ../../../sass/helpers/icons.scss */
-.fb_feed {
-  margin-right: 10px;
-  width: 400px;
 }

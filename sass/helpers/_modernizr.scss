@@ -7,13 +7,15 @@
 	float: left;
 	position:relative;
 	top: -150px;
-	left: 100px;
+	left: 150px;
 }
 .no-flexbox #nav_wrapper{ float: left; } 
 .no-flexbox #nav_menu{ text-align:center;}
 
 
-
+.no-flexbox #aside_left, .no-flexbox #aside_right{
+	width: 450px;
+}
 
 
 /* Modernizr */
@@ -27,7 +29,7 @@
 .no-flexbox #main_wrapper { display: inline-block; }
 
 .no-flexbox #aside_left, .no-flexbox #main_content, .no-flexbox #aside_right{ 
-	float:left; width: 320px;
+	float:left; width: 450px;
 } 
 
 

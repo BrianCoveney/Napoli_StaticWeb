@@ -123,6 +123,7 @@
 			}
 
 			.coffee_cakes{
+				border-top:none;
 				border-bottom: $borderLight;
 			}
 
@@ -394,7 +395,7 @@ textarea{
  ========================================================================== */
 
    $phone-width: 320px;
-   $tablet-width: 601px;
+   $tablet-width: 600px;
    $table-large:768px;
    $desktop-width: 1024px;
 
@@ -460,8 +461,6 @@ textarea{
 		float: right;
 	}
 
-		
-
 	#nav_container
 	{
 		border-top: 15px solid #656565;
@@ -473,6 +472,17 @@ textarea{
 			height: 100px;
 
 
+			.lgScreen_phNum
+			{
+				font-family: $generalText;
+				font-size: 12px;
+				position: relative;
+				top: -81px;
+				left: 20px;
+				width:100%;
+			}
+
+
 			img{
 				height: 100px;
 				width: 128px;
@@ -480,22 +490,34 @@ textarea{
 
 
 			.icon_svg{
-				width: 15px;
-				height: 15px;
+				width: 16px;
+				height: 16px;
 			}
 
 			#nav_menu ul
 			{
-				margin-top: 85px;
+				margin-top: 81px;
 
 				li a
 				{
-					margin-left: 20px;
+					margin-left: 10px;
 					font-size: 15px;
 				}
+
 			}
 		}
+
 	}
+
+		
+
+	
+
+			
+
+
+
+			
 
 	.hamburger-menu, #dropDown,  #logo_smScreen,
 		.above, .phNum, .rightImg
@@ -786,6 +808,25 @@ Small Screen Drop Down Menu
 .hamburger-menu:before
 {
     top:14px;
+}
+
+
+#main_img .menuPage_img
+{
+	margin-left: 20px;
+	margin-right: 0px;  
+}
+
+.leftImgInterior
+{
+	width: 167px;
+	height: 250px;
+}
+
+.leftImgExterior
+{
+	width: 251px;
+	height: 250px;
 }
 
 .rightImg

@@ -91,7 +91,16 @@
 				color: $darkColour;
 			}
 		}
-	}
+
+		.lgScreen_phNum{
+			font-family: $generalText;
+			font-size: 12px;
+			position: relative;
+			top: -120px;
+			left:645px;
+		}
+
+	} // end #nav_menu
 
 	#logo_container #logo_img
 	{

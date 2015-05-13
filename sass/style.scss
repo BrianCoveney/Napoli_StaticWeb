@@ -39,6 +39,8 @@
 
 	#products_wrapper{ margin-top: 20px; }
 
+
+
 	p{
 		margin: 10px;
 		padding: 10px;
@@ -275,7 +277,7 @@
 
 
 
-#main_img{
+#main_img, #main_img_aboutPage{
 	width: 100%;
 	height: 100%;
 	padding-top:30px;
@@ -289,7 +291,13 @@
 
 	.rightImg{ 
 			float: right;
-		}
+	}
+}
+
+.menuPage_img
+{
+
+	margin: 20px 80px 20px 60px; 
 }
 
 
@@ -399,11 +407,11 @@ textarea{
    $table-large:768px;
    $desktop-width: 1024px;
 
-   #main_wrapper{
-   	@media only screen and (max-width: $table-large){
-   		display: block;
-   	}
-   }
+#main_wrapper{
+  @media only screen and (max-width: $table-large){
+  	display: block;
+  }
+}
 
 
 @mixin desktop{
@@ -441,6 +449,27 @@ textarea{
 @include tablets
 {
 
+	#main_img, #main_img_aboutPage
+	{
+   	//Center img
+   	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	#main_img
+	{
+		width: 700px;
+   	height: 383px;
+	}
+
+	#main_img_aboutPage
+	{
+		width: 700px;
+   	height: 321px;
+	}
+
+
 	#aside_left, #aside_right{
 		border-top: $borderLight;
 		border-bottom: $borderLight;
@@ -448,12 +477,6 @@ textarea{
 		border-right: none;
 	} 
 
-	.shopping_cart
-	{
-		padding-left: 0px !important; // moving the button to the lhs
-		margin-bottom: 20px;
-		float: right;
-	}
 
 	#nav_container
 	{
@@ -568,6 +591,8 @@ textarea{
 	#carousel{
 		margin-top: 20px;
 	}
+
+
 
 	#logo_img
 	{			
@@ -818,19 +843,11 @@ Small Screen Drop Down Menu
 {
 	display: none;
 }
+
+
 	
 } // end @include phone
 
-
-#main_img{
-   	@media only screen and (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}){
-   		width: 604px;
-   		height: 384px;
-   		display: block;
-    		margin-left: auto;
-    		margin-right: auto;
-   }
-}
 
 
 

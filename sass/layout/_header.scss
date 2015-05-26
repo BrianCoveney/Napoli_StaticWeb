@@ -60,6 +60,8 @@
 			margin-left: 40px;
 			text-decoration: none;
 			color: $darkColour; 
+			padding: 10px;
+			// border:1px solid transparent;
 		}
 
 			span .button-text
@@ -83,7 +85,8 @@
 		.active
 		{
 			background-color:$lightColour;
-			padding: 10px 1px 0px 1px;
+			// padding: 10px 1px 0px 1px;
+			padding: 10px;
 			@include border-radius(5px 20px 0px 0px);
 
 			span:hover

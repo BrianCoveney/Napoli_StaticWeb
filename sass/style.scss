@@ -686,6 +686,9 @@ textarea{
 
 	#footer_container
 	{
+
+		@include flex-direction(column);
+
 		p, a, #footer_address
 		{
 			font-size: 12px;
@@ -694,17 +697,39 @@ textarea{
 
 		#explore_container
 		{
-			width:50px;
+			flex-basis: 100%;
+			padding-left: 10px;
+
+			a
+			{
+				font-size: 12px;
+				line-height: 25px;
+				color: $napoliBlue;
+			}
+
+			a:hover
+			{
+				text-decoration: underline;
+			}
 		}
 
 		#address_container
 		{
-			width:180px;
-			display: block;
+			flex-basis: 100%;
+ 			@include flex-direction(column);
 			bottom:115px;
+			margin-left: 10px
 		}
 
-		ul.social_links li{display:none;}
+		ul.social_links li{
+		float: left;
+			a{
+				margin-left: 10px;
+				margin-right: 60px;
+			}
+		}
+
+		
 	}
 
 	//Products

@@ -80,8 +80,8 @@
 
 		#aside_left
 		{
-			flex-grow:1;
-			flex-basis:33%;
+			 @include flex-grow(1);
+			@include flex-basis(33%);
 
 			@include order(1);
 			font-family: $generalText;
@@ -98,8 +98,8 @@
 		}
 
 		#main_content{
-			flex-grow:1;
-			flex-basis:33%;
+			 @include flex-grow(1);
+			@include flex-basis(33%);
 			@include order(2);
 			font-family: $generalText;
 			min-height: 400px;
@@ -108,8 +108,8 @@
 
 
 		#aside_right{
-			flex-grow:1;
-			flex-basis:33%;
+			 @include flex-grow(1);
+			@include flex-basis(33%);
 			// @include order(3);
 			font-family: $generalText;
 			min-height: 280px;
@@ -155,15 +155,15 @@
 		}
 
 		#main_content__aboutPG{
-			flex-grow:1;
-			order: 2;
-			flex-basis:50%;
+			 @include flex-grow(1);
+			@include order (2);
+			@include flex-basis(50%);
 			padding-right: 100px;
 		}
 		#aside_right__aboutPG{
-			flex-grow:1;
-			order: 1;
-			flex-basis:50%;
+			 @include flex-grow(1);
+			@include order (1);
+			@include flex-basis(50%);
 		}
 
 		.aboutPG_desc{
@@ -184,8 +184,8 @@
 
 			
 			.item_a{
-				flex-grow:1;
-				flex-basis:100%;
+				 @include flex-grow(1);
+				@include flex-basis(100%);
 				margin-bottom: 21px;
 				height: 315px;
 				background-color:#fafafa;
@@ -195,8 +195,8 @@
 			}
 
 			.item_b{
-				flex-grow:1;
-				flex-basis:100%;
+				 @include flex-grow(1);
+				@include flex-basis(100%);
 				margin-bottom: 20px;
 				height: 315px;
 				background-color:#fafafa;
@@ -697,7 +697,7 @@ textarea{
 
 		#explore_container
 		{
-			flex-basis: 100%;
+			@include flex-basis( 100%);
 			padding-left: 10px;
 
 			a
@@ -715,7 +715,7 @@ textarea{
 
 		#address_container
 		{
-			flex-basis: 100%;
+			@include flex-basis( 100%);
  			@include flex-direction(column);
 			bottom:115px;
 			margin-left: 10px
@@ -877,10 +877,3 @@ Small Screen Drop Down Menu
 
 	
 } // end @include phone
-
-
-
-
-
-
-

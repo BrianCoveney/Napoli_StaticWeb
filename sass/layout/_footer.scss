@@ -16,15 +16,15 @@ footer{
 
 
 	#footer_container{
-		display: flex;
+		@include display-flex;
 		max-width:980px;
 		margin: 0 auto;
 		
 	}
 		
 	#explore_container{
-			flex-basis: 20%;
-			order:1;
+			@include flex-basis(20%);
+			@include order(1);
 			padding: 10px 20px;
 			font-size:13px;
 			line-height: 1.5em;
@@ -39,8 +39,8 @@ footer{
 	}
 
 	#address_container{
-			flex-basis: 75%;
-			order:1;
+			@include flex-basis(75%);
+			@include order(1);
 			padding-top: 10px;
 			margin: 0 auto; 
 			width: 250px;
@@ -55,8 +55,8 @@ footer{
 	}
 
 	.social_container{
-		flex-basis: 25%;
-		order:3;
+		@include flex-basis(25%);
+		@include order(3);
 	}
 
 	.footer_titles{

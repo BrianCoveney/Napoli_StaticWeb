@@ -37,6 +37,8 @@
 	max-width:980px;
 	margin: 0 auto;
 	background: $napoliBlue;
+   	border-right: groove #ECECEA;   			
+
 
 
 	#nav_menu
@@ -57,7 +59,7 @@
 			font-family: "ff-unit-rounded-web-1","ff-unit-rounded-web-2",sans-serif;
 			font-weight: bold;
 			font-size:20px;
-			margin-left: 40px;
+			margin-left: 20px;
 			text-decoration: none;
 			color: $darkColour; 
 			padding: 10px;
@@ -84,7 +86,7 @@
 
 		.active
 		{
-			background-color:$lightColour;
+			background-color:#ECECEA;
 			// padding: 10px 1px 0px 1px;
 			padding: 10px;
 			@include border-radius(5px 20px 0px 0px);
@@ -105,9 +107,11 @@
 
 	} // end #nav_menu
 
-	#logo_container #logo_img
+	#logo_container 
 	{
-		// border:none;
+		#logo_img{	
+   			border-left: groove #ECECEA;   			
+		}
 	}
 
 	//Mobile screen size text

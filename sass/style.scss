@@ -13,6 +13,9 @@
 /* ==========================================================================
    Overall Container 
    ==========================================================================*/
+
+body{background-color:#ECECEA;}
+
 * { 
 	margin:0; 
 	padding:0; 
@@ -404,7 +407,7 @@ textarea{
 
 
 /* ==========================================================================
- Media Queries - taking them out of a seperate file 
+ Media Queries 
  ========================================================================== */
 
    $phone-width: 320px;
@@ -680,14 +683,14 @@ textarea{
 
 	footer
 	{
-		min-height: 100px;
+		min-height: 200px;
 		border-top: 20px solid $napoliBlue;
 	}
 
 	#footer_container
 	{
 
-		@include flex-direction(column);
+		@include flex-direction(row);
 
 		p, a, #footer_address
 		{
@@ -697,8 +700,9 @@ textarea{
 
 		#explore_container
 		{
-			@include flex-basis( 100%);
+			@include flex-basis(100%);
 			padding-left: 10px;
+			max-width: 70px;
 
 			a
 			{

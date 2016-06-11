@@ -4,8 +4,8 @@
 *.csv
 
 # ignore grunt files
-node_modules
-npm-debug.log
+node_modules/
+npm-debug.log/
 
 # ignore generated source maps
 *.css.map

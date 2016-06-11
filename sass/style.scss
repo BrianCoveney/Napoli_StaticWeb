@@ -62,6 +62,8 @@ body{background-color:#ECECEA;}
 
 	.menu_title{
 		text-decoration: underline;
+		text-align: center;
+		margin-bottom: 20px;
 	}
 
 
@@ -69,6 +71,10 @@ body{background-color:#ECECEA;}
 		font-variant: small-caps;
 		font-size:14px;
 		color: #3c3c3c;
+		text-align: center;
+		max-width: 600px;
+		margin-bottom: 20px;
+		margin: 0 auto;
 
 		.menu_english{
 			font-variant: normal;
@@ -109,6 +115,7 @@ body{background-color:#ECECEA;}
 			border-right: $borderLight;
 		}
 
+		.menuPg{border:none;}
 
 		#aside_right{
 			 @include flex-grow(1);
@@ -117,6 +124,9 @@ body{background-color:#ECECEA;}
 			font-family: $generalText;
 			min-height: 280px;
 			border-left: $borderLight;
+			
+
+			
 
 
 			.fieldset 
@@ -291,10 +301,12 @@ body{background-color:#ECECEA;}
 	padding-top:30px;
 	margin-bottom:20px;
 
+
 	.menuPage_img
 	{
 		margin-left: 60px;
 		margin-right: 60px;  
+		border-radius: 10px;
 	}
 
 	.rightImg{ 
@@ -304,8 +316,8 @@ body{background-color:#ECECEA;}
 
 .menuPage_img
 {
-
 	margin: 20px 80px 20px 60px; 
+	border-radius: 10px;
 }
 
 
@@ -316,6 +328,9 @@ body{background-color:#ECECEA;}
     height: 400px;
     margin-left: 38px;
     margin-top: 50px;
+    border: 1px dashed #ddd;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+
 }
 
 #address_container_contactPage{
@@ -379,30 +394,15 @@ textarea{
 
 .send, .reset{  
 	background-color:$napoliBlue;
-	 /* Safari 4-5, Chrome 1-9 */
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2F2727), to($napoliBlue));
-
-  /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(top, $napoliBlue, #2F2727);
-
-  /* Firefox 3.6+ */
-  background: -moz-linear-gradient(top, $napoliBlue, #2F2727);
-
-  /* IE 10 */
-  background: -ms-linear-gradient(top, $napoliBlue, #2F2727);
-
-  /* Opera 11.10+ */
-  background: -o-linear-gradient(top, $napoliBlue, #2F2727);
-
-
-	color: white;
-	border: none;
-	width:100px;
+    background-image: -webkit-linear-gradient(top,$napoliBlue,#277ac1);
+    color: white;
+    border: none;
     cursor: pointer;
-	border-radius: 10px;
-	-webkit-box-shadow: 0 10px 6px -6px #777;
-	-moz-box-shadow: 0 10px 6px -6px #777;
-	box-shadow: 0 10px 6px -6px #777;
+    width: 100px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 8px 6px -6px #777;
+    -moz-box-shadow: 0 8px 6px -6px #777;
+    box-shadow: 0 8px 6px -6px #777;
 }
 
 
@@ -562,6 +562,9 @@ textarea{
 
 	#main_wrapper 
 	{ 
+
+		#main_content .coffeeImg{display:none;}
+
 		#aside_left
 		{
 			border-top: $borderLight;
